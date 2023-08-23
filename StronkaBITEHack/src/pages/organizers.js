@@ -1,15 +1,15 @@
 import * as React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Header from "../components/header";
 
 const Organizers = () => (
-  <Layout>
-    <h1>Organizatorzy</h1>
-    <p>Nasz CT</p>
-    <Link to="/">O projekcie</Link>
-  </Layout>
+                <div>
+                    <Header/>
+                    <div>
+                        <h1>Organizatorzy</h1>
+                        <p>Nasz CT</p>
+                    </div>
+                </div>
 )
 
 export const Head = () => <Seo title="Organizatorzy" />
