@@ -6,6 +6,7 @@ import rafonIN from "../images/rafon_index.jpg";
 import VideoPlayer from "../components/videoPlayerHomePage";
 import Header from "../components/header";
 import InfoBlock from "../components/InfoBlock"
+import CategorySlider from "../components/categorySlider";
 
 const HomePage = () => {
     return (
@@ -27,6 +28,7 @@ const HomePage = () => {
                         title="Gdzie?"
                         content="Klub studio"
                     />
+                    <CategorySlider/>
                 </div>
             </div>
         </div>

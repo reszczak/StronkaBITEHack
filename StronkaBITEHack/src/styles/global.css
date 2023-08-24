@@ -71,3 +71,41 @@ nav li {
 .info-text {
     flex: 2;
 }
+
+.event-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+.event-name {
+    margin: 1rem;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.event-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.event-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-button:hover {
+    background-color: #0056b3;
+}
+
+
