@@ -40,6 +40,9 @@ nav li {
 .content-container {
     width: 50vw;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video-container {
@@ -51,4 +54,20 @@ nav li {
 .video-container video {
     width: 100%;
     display: block;
+}
+
+.info-block {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.info-image {
+    max-width: 30vw;
+    max-height: 20vh;
+    flex: 1;
+}
+
+.info-text {
+    flex: 2;
 }
