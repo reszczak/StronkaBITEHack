@@ -1,19 +1,22 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import bestLogo from "../images/best.png"
 
-const Header = () => {
+const Header = ({ scrollToSection }) => {
     return (
-        <header>
+        <div className="header-container">
             <nav>
                 <ul>
-                    <li><Link to="/"><img src={bestLogo} alt={"Logo"} style={{width: '5vw', height: '10vh'}}/></Link></li>
-                    <li><Link to="/about">O projekcie</Link></li>
-                    <li><Link to="/organizers">Organizatorzy</Link></li>
-                    <li><Link to="/regulations">Regulamin</Link></li>
+                    <li>
+                        <button onClick={() => scrollToSection('main')}>
+                            <img src={bestLogo} alt={"Logo"} style={{ width: '5vw', height: '10vh' }} />
+                        </button>
+                    </li>
+                    <li><button onClick={() => scrollToSection('about')}>O projekcie</button></li>
+                    <li><button onClick={() => scrollToSection('regulations')}>Regulamin</button></li>
+                    <li><button onClick={() => scrollToSection('organizers')}>Organizatorzy</button></li>
                 </ul>
             </nav>
-        </header>
+        </div>
     );
 };
 

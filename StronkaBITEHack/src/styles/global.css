@@ -2,6 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
@@ -27,18 +29,19 @@ nav li {
 }
 
 .container {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    width: 100vw;
-    height: 80vh;
+    width: 90vw;
+    height: 100vh;
 }
 
 .content-container {
-    width: 50vw;
+    width: 45vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -106,6 +109,13 @@ nav li {
 
 .event-button:hover {
     background-color: #0056b3;
+}
+
+.header-container {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
 }
 
 
