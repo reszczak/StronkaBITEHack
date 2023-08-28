@@ -29,6 +29,10 @@ nav li {
     margin-top: 1rem;
 }
 
+h1 {
+    margin-top: 5vh;
+}
+
 .container {
     margin: 0 auto;
     display: flex;
@@ -40,6 +44,7 @@ nav li {
     width: 90vw;
     height: 100vh;
     scroll-snap-align: start;
+    /*transform: translateY(10vh);*/
 }
 
 .content-container {
@@ -48,6 +53,34 @@ nav li {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.about1-image-container {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about1-desc-container {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.about1-paragraph-container {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-bottom: 45vh;
+    justify-content: flex-start;
+}
+
+.about1-paragraph-container p {
+    align-self: flex-start;
 }
 
 .video-container {
@@ -118,6 +151,12 @@ nav li {
     top: 0;
     background-color: white;
     z-index: 1000;
+}
+
+.a1-img {
+    max-width: 40vw;
+    max-height: 30vh;
+    flex: 1;
 }
 
 
