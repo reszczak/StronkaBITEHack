@@ -4,6 +4,7 @@ import Seo from "../components/seo";
 import rafon from "../images/Rafonix - przejebane życie.mp4";
 import rafonIN from "../images/rafon_index.jpg";
 import rafonA1 from "../images/rafon-about1.jpg";
+import rafonA2 from "../images/rafon-about2.jpg";
 import VideoPlayer from "../components/videoPlayerHomePage";
 import Header from "../components/header";
 import InfoBlock from "../components/InfoBlock";
@@ -83,17 +84,82 @@ const HomePage = () => {
             </section>
             <section ref={sectionRefs.about2}>
                 <div className={"container"}>
-                    <h1>O projekcie 2</h1>
+                    <div className={"about2-desc-container"}>
+                        <h2>Kategoria klasyczna</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
+                            nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
+                            itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
+                            exercitationem qui magni deserunt ea voluptatem
+                        </p>
+                        <h2>Kategoria robotyczna</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
+                            nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
+                            itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
+                            exercitationem qui magni deserunt ea voluptatem
+                        </p>
+                        <h2>Kategoria GameJam</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
+                            nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
+                            itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
+                            exercitationem qui magni deserunt ea voluptatem
+                        </p>
+                    </div>
+                    <div className={"about2-image-container"}>
+                        <img className={"a2-img"} src={rafonA2} alt={"rafon-about2"}/>
+                    </div>
+                    <div className={"about2-paragraph-container"}>
+                        <h2>Trzy różne kategorie</h2>
+                    </div>
                 </div>
             </section>
             <section ref={sectionRefs.about3}>
                 <div className={"container"}>
-                    <h1>O projekcie 3</h1>
+                    <div className={"about3-desc-container-left"}>
+                        <h2>Przebieg wydarzenia</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
+                            nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
+                            itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
+                            exercitationem qui magni deserunt ea voluptatem
+                        </p>
+                        <div className={"about3-space"}></div>
+                        <h2>Atrakcje</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
+                            nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
+                            itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
+                            exercitationem qui magni deserunt ea voluptatem
+                        </p>
+                    </div>
+                    <div className={"about3-image-container"}>
+                        <img className={"a3-img"} src={rafonA2} alt={"rafon-about3"}/>
+                    </div>
+                    <div className={"about3-desc-container-right"}>
+                        <h2>Czym dokładnie jest BITEHack?</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
+                            nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
+                            itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
+                            exercitationem qui magni deserunt ea voluptatem
+                        </p>
+                        <div className={"about3-space"}></div>
+                        <h2>Czy warto</h2>
+                        <p>
+                            W CHUJ
+                            Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
+                            nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
+                            itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
+                            exercitationem qui magni deserunt ea voluptatem
+                        </p>
+                    </div>
                 </div>
             </section>
             <section ref={sectionRefs.about4}>
                 <div className={"container"}>
-                    <h1>O projekcie 4</h1>
+                    <h1>Partnerzy</h1>
                 </div>
             </section>
             <section ref={sectionRefs.regulations}>

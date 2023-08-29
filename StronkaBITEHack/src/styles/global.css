@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: unset;
     scroll-snap-type: y mandatory;
 }
 
@@ -55,6 +55,12 @@ h1 {
     align-items: center;
 }
 
+.a1-img {
+    max-width: 40vw;
+    max-height: 30vh;
+    flex: 1;
+}
+
 .about1-image-container {
     width: 30vw;
     display: flex;
@@ -81,6 +87,69 @@ h1 {
 
 .about1-paragraph-container p {
     align-self: flex-start;
+}
+
+.a2-img {
+    max-width: 50vw;
+    max-height: 50vh;
+    flex: 1;
+}
+
+.about2-desc-container {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.about2-image-container {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:5vw;
+}
+
+.about2-paragraph-container {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.a3-img {
+    max-width: 30vw;
+    max-height: 30vh;
+    flex: 1;
+}
+
+.about3-desc-container-left {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.about3-space {
+    height: 25vh;
+}
+
+.about3-desc-container-right {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: center;
+}
+
+.about3-image-container {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video-container {
@@ -153,10 +222,6 @@ h1 {
     z-index: 1000;
 }
 
-.a1-img {
-    max-width: 40vw;
-    max-height: 30vh;
-    flex: 1;
-}
+
 
 
