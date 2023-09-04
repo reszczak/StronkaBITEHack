@@ -159,12 +159,13 @@ const HomePage = () => {
             </section>
             <section ref={sectionRefs.about4}>
                 <div className={"container"}>
-                    <h1>Partnerzy</h1>
-                </div>
-            </section>
-            <section ref={sectionRefs.regulations}>
-                <div className={"container"}>
-                    <h1>Regulamin</h1>
+                    <div className={"about4-content"}>
+                        <h1>Partner Główny</h1>
+                        <div className={"about4-image-container"}>
+                            <img className={"a4-img"} src={rafonA1} alt={"rafon-about4"}/>
+                        </div>
+                        <h1>Partnerzy</h1>
+                    </div>
                 </div>
             </section>
             <section ref={sectionRefs.organizers}>
