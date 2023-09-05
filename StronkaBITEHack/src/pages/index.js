@@ -160,11 +160,23 @@ const HomePage = () => {
             <section ref={sectionRefs.about4}>
                 <div className={"container"}>
                     <div className={"about4-content"}>
-                        <h1>Partner Główny</h1>
+                        <h2>Partner Główny</h2>
                         <div className={"about4-image-container"}>
                             <img className={"a4-img"} src={rafonA1} alt={"rafon-about4"}/>
                         </div>
-                        <h1>Partnerzy</h1>
+                        <h3>Partnerzy</h3>
+                    </div>
+                    <div className={"partner-images"}>
+                        <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
+                        <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
+                        <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
+                        <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
+                        <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
+                        <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
+                        <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
+                        <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
+                        <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
+                        <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
                     </div>
                 </div>
             </section>
