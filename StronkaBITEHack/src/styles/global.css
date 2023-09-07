@@ -252,6 +252,32 @@ h1 {
     z-index: 1000;
 }
 
+.organizers-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 
+.organizers-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 50vh;
+}
 
+.organizers-gallery {
+    width: 45%;
+}
 
+.organizers-description {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.organizers-gallery-right {
+    width: 10%;
+    margin-left: 15%;
+    text-align: center;
+}

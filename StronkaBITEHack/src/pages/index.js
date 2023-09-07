@@ -9,6 +9,8 @@ import VideoPlayer from "../components/videoPlayerHomePage";
 import Header from "../components/header";
 import InfoBlock from "../components/InfoBlock";
 import CategorySlider from "../components/categorySlider";
+import ImageGallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css';
 
 const HomePage = () => {
     const sectionRefs = {
@@ -31,6 +33,31 @@ const HomePage = () => {
     useEffect(() => {
         sectionRefs.main.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }, []);
+
+    const images = [
+        {
+            original: rafonA1,
+            thumbnail: rafonA1,
+            description: 'Opis pierwszego zdjęcia',
+            stat: rafonA2,
+        },
+        {
+            original: rafonA1,
+            thumbnail: rafonA1,
+            description: 'Opis drugiego zdjęcia',
+            stat: rafonIN,
+        },
+    ];
+
+
+    const [currentImage, setCurrentImage] = useState(0);
+
+
+    const handleImageChange = (index) => {
+        setCurrentImage(index);
+    };
+
+
 
     return (
         <div>
@@ -181,8 +208,32 @@ const HomePage = () => {
                 </div>
             </section>
             <section ref={sectionRefs.organizers}>
-                <div className={"container"}>
+                <div className={'container'}>
                     <h1>Organizatorzy</h1>
+                    <div className="organizers-container">
+                    <div className="organizers-content">
+                        <div className="organizers-gallery">
+                            <ImageGallery
+                                items={images}
+                                showNav={true}
+                                showBullets={true}
+                                showThumbnails={false}
+                                showFullscreenButton={false}
+                                showPlayButton={false}
+                                autoPlay={false}
+                                showImageDescription={false}
+                                onSlide={handleImageChange}
+                                currentIndex={currentImage}
+                            />
+                        </div>
+                        <div className="organizers-description">
+                            <p>{images[currentImage].description}</p>
+                        </div>
+                    </div>
+                    <div className="organizers-gallery-right">
+                            <img alt={images[currentImage].description} src={images[currentImage].stat} />
+                    </div>
+                    </div>
                 </div>
             </section>
         </div>
