@@ -11,6 +11,7 @@ import InfoBlock from "../components/InfoBlock";
 import CategorySlider from "../components/categorySlider";
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import Footer from "../components/footer";
 
 const HomePage = () => {
     const sectionRefs = {
@@ -209,8 +210,8 @@ const HomePage = () => {
             </section>
             <section ref={sectionRefs.organizers}>
                 <div className={'container'}>
-                    <h1>Organizatorzy</h1>
                     <div className="organizers-container">
+                        {/*<h1>Organizatorzy</h1>*/}
                     <div className="organizers-content">
                         <div className="organizers-gallery">
                             <ImageGallery
@@ -233,6 +234,9 @@ const HomePage = () => {
                     <div className="organizers-gallery-right">
                             <img alt={images[currentImage].description} src={images[currentImage].stat} />
                     </div>
+                    </div>
+                    <div className="footer">
+                        CHUJ
                     </div>
                 </div>
             </section>
