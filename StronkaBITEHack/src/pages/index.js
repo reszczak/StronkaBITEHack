@@ -1,17 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
 import '../styles/global.css';
 import Seo from "../components/seo";
-import rafon from "../images/Rafonix - przejebane życie.mp4";
 import rafonIN from "../images/rafon_index.jpg";
 import rafonA1 from "../images/rafon-about1.jpg";
 import rafonA2 from "../images/rafon-about2.jpg";
-import VideoPlayer from "../components/videoPlayerHomePage";
 import Header from "../components/header";
-import InfoBlock from "../components/InfoBlock";
-import CategorySlider from "../components/categorySlider";
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
-import Footer from "../components/footer";
+import MainPage from "../components/mainPafeComponents/mainPage"
 
 const HomePage = () => {
     const sectionRefs = {
@@ -64,25 +60,7 @@ const HomePage = () => {
         <div>
             <Header scrollToSection={scrollToSection} />
             <section ref={sectionRefs.main}>
-                <div className={"container"}>
-                    <div className={"video-container"}>
-                        <VideoPlayer videoSrc={rafon} />
-                    </div>
-                    <div className={"content-container"}>
-                        <h1>O projekcie</h1>
-                        <InfoBlock
-                            imageSrc={rafonIN}
-                            title="Kiedy?"
-                            content="20-21 stycznia 2k24"
-                        />
-                        <InfoBlock
-                            imageSrc={rafonIN}
-                            title="Gdzie?"
-                            content="Klub studio"
-                        />
-                        <CategorySlider/>
-                    </div>
-                </div>
+            <MainPage/>
             </section>
             <section ref={sectionRefs.about1}>
                 <div className={"container"}>
