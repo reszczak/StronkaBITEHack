@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/global.css'
 import VideoPlayer from './videoPlayerHomePage';
 import InfoBlock from './infoBlock';
 import CategorySlider from './CategorySlider';
