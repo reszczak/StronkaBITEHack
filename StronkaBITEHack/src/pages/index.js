@@ -32,7 +32,7 @@ const HomePage = () => {
         sectionRefs.main.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }, []);
 
-    const { images, currentImage, handleImageChange } = ImageData();
+     const { images, currentImage, handleImageChange } = ImageData();
 
     return (
         <div>
@@ -53,7 +53,7 @@ const HomePage = () => {
                 <About4/>
             </section>
             <section ref={sectionRefs.organizers}>
-                <Organizers images={images} currentImage={currentImage} hendleImageChange={handleImageChange}/>
+                <Organizers images={images} currentImage={currentImage} handleImageChange={handleImageChange} />
             </section>
         </div>
     );
