@@ -5,7 +5,7 @@ import '../../styles/organizersStyles/organizers.css'
 
 const Organizers = ({ images, currentImage, handleImageChange }) => {
     return (
-        <div className={'container'}>
+        <div className={'o-container'}>
             <div className="organizers-container">
                 <div className="organizers-content">
                     <div className="organizers-gallery">

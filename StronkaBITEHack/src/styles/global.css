@@ -24,7 +24,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     scroll-snap-align: start;
     /*transform: translateY(10vh);*/
@@ -38,17 +38,17 @@ h1 {
     display: block;
 }
 
-header {
-    background-color: #cef;
-    color: white;
-    min-height: 10vh;
-}
-
 .header-container {
     position: sticky;
     top: 0;
     background-color: white;
     z-index: 1000;
+}
+
+header {
+    background-color: #cef;
+    color: white;
+    min-height: 10vh;
 }
 
 nav ul {
