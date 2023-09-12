@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/global.css'
+import '../../styles/aboutPageStyles/about2.css'
 import rafonA2 from "../../images/rafon-about2.jpg";
 
 const About2 = () => {

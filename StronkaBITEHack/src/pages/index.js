@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 import '../styles/global.css';
+import '../styles/globalComponentsStyles/scrollbar.css'
 import 'react-image-gallery/styles/css/image-gallery.css';
 import Seo from "../components/seo";
-import Header from "../components/header";
-import MainPage from "../components/mainPafeComponents/mainPage"
+import Header from "../components/globalComponents/header";
+import MainPage from "../components/mainPageComponents/mainPage"
 import About1 from "../components/aboutPageComponents/about1";
 import About2 from "../components/aboutPageComponents/about2";
 import About3 from "../components/aboutPageComponents/about3";

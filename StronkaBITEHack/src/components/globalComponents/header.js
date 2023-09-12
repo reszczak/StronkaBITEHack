@@ -1,5 +1,5 @@
 import React from 'react';
-import bestLogo from "../images/best.png"
+import bestLogo from "../../images/best.png"
 
 const Header = ({ scrollToSection }) => {
     return (

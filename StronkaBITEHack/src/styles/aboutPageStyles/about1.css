@@ -1,0 +1,33 @@
+.a1-img {
+    max-width: 30vw;
+    max-height: 30vh;
+    flex: 1;
+}
+
+.about1-image-container {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about1-desc-container {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.about1-paragraph-container {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-bottom: 45vh;
+    justify-content: flex-start;
+}
+
+.about1-paragraph-container p {
+    align-self: flex-start;
+}

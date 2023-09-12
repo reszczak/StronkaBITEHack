@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/global.css'
+import '../../styles/mainPageStyles/main.css'
 import VideoPlayer from './videoPlayerHomePage';
 import InfoBlock from './infoBlock';
 import CategorySlider from './CategorySlider';
@@ -9,9 +10,7 @@ import rafonIN from '../../images/rafon_index.jpg';
 const MainPage = () => {
     return (
             <div className={"container"}>
-                <div className={"video-container"}>
-                    <VideoPlayer videoSrc={rafon} />
-                </div>
+                <VideoPlayer videoSrc={rafon} />
                 <div className={"content-container"}>
                     <h1>O projekcie</h1>
                     <InfoBlock

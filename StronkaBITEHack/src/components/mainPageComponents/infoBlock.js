@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/global.css';
+import '../../styles/mainPageStyles/infoBlock.css'
 
 const InfoBlock = ({ imageSrc, title, content }) => {
     return (

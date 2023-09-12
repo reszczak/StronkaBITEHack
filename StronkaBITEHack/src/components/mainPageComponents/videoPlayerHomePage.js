@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/mainPageStyles/videoPlayer.css'
 
 const VideoPlayer = ({ videoSrc }) => {
     return (

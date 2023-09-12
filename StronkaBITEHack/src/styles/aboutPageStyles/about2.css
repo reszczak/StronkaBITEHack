@@ -1,0 +1,29 @@
+.a2-img {
+    max-width: 35vw;
+    max-height: 35vh;
+    flex: 1;
+}
+
+.about2-desc-container {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.about2-image-container {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:5vw;
+}
+
+.about2-paragraph-container {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+}

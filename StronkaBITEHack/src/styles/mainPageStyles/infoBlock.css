@@ -1,0 +1,15 @@
+.info-block {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.info-image {
+    max-width: 30vw;
+    max-height: 20vh;
+    flex: 1;
+}
+
+.info-text {
+    flex: 2;
+}

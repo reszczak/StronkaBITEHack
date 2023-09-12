@@ -1,0 +1,33 @@
+.organizers-container {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.organizers-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 40%;
+    align-self: flex-start;
+}
+
+.organizers-gallery {
+    margin-left: 5vw;
+    width: 100%;
+}
+
+.organizers-description {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.organizers-gallery-right {
+    margin-left: 25%;
+    width: 40%;
+    height: 60vh;
+}
