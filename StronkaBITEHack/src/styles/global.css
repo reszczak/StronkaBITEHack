@@ -5,11 +5,12 @@ body, html {
     overflow-x: hidden;
     overflow-y: initial;
     scroll-snap-type: y mandatory;
+
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--main-background-color, #0056b3);
 }
 
 h1 {

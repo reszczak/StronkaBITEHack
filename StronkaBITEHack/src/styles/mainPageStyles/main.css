@@ -5,3 +5,38 @@
     flex-direction: column;
     align-items: center;
 }
+
+.event-button {
+    width: 15vw;
+    height: 5vw;
+    background-color: orange;
+    color: black;
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: crosshair;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    transform: skew(-30deg);
+    transform-origin: right;
+    margin-top:2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.event-button:hover {
+    background-color: #e95800;
+    color: white;
+}
+
+.event-slider a{
+    text-decoration: none;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+}

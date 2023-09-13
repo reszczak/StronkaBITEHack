@@ -1,13 +1,28 @@
 .info-block {
     display: flex;
     width: 100%;
+    max-width: 40vw;
+    max-height: 20vh;
     margin-top: 1rem;
+    border: 1px solid orange;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .info-image {
+    height: 100%;
     max-width: 30vw;
     max-height: 20vh;
     flex: 1;
+    border-radius: 20px;
+}
+
+.info-image img{
+    height: 100%;
+    max-width: 30vw;
+    max-height: 20vh;
+    flex: 1;
+    border-radius: 20px;
 }
 
 .info-text {
