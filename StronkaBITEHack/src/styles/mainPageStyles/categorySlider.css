@@ -20,7 +20,3 @@
     flex-direction: column;
     margin-top: 1rem;
 }
-
-.event-button:hover {
-    background-color: #0056b3;
-}
