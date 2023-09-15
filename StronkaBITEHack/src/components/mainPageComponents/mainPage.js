@@ -8,13 +8,7 @@ import rafon from '../../images/Rafonix - przejebane życie square.mp4';
 import rafonIN from '../../images/rafon_index.jpg';
 
 const MainPage = () => {
-    const [backgroundColor, setBackgroundColor] = useState('#0056b3');
     const [buttonBackgroundColor, setButtonBackgroundColor] = useState('orange');
-
-    const handleBackgroundColorChange = (color) => {
-        document.body.style.backgroundColor = color;
-        setBackgroundColor(color);
-    };
 
     const handleButtonHover = () => {
         setButtonBackgroundColor('#e95800');
@@ -25,10 +19,10 @@ const MainPage = () => {
     };
 
     return (
-        <div className={"container"} style={{ backgroundColor: backgroundColor }}>
+        <div className={"container"}>
             <div className={"slider-container"}>
                 <VideoPlayer videoSrc={rafon} />
-                <CategorySlider onBackgroundColorChange={handleBackgroundColorChange} />
+                <CategorySlider/>
             </div>
             <div className={"content-container"}>
                 <h1>O projekcie</h1>
