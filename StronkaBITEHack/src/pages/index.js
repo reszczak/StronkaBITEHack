@@ -33,74 +33,98 @@ const HomePage = () => {
         sectionRefs.main.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }, []);
 
-    const { images, currentImage, handleImageChange } = ImageData();
+    useEffect(() => {
+        const headerButton = document.querySelector(".header-button-logo");
+        if (headerButton) {
+            headerButton.click();
+        }
+    }, []);
 
-    const handleDotClick = (sectionName) => {
-        const section = sectionRefs[sectionName].current;
-        section.scrollIntoView({ behavior: 'smooth' });
+    const { images, currentImage, handleImageChange } = ImageData();
+    const indicators = document.querySelectorAll(".indicator");
+    const sections = document.querySelectorAll("section");
+
+    const resetCurrentActiveIndicator = () => {
+        const activeIndicator = document.querySelector(".active");
+        activeIndicator.classList.remove("active");
     };
 
-    useEffect(() => {
-        const dots = document.querySelectorAll(".dot");
+    const onSectionLeavesViewport = (section) => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        resetCurrentActiveIndicator();
+                        const element = entry.target;
+                        const indicator = document.querySelector(`a[href='#${element.id}']`);
+                        indicator.classList.add("active");
+                        return;
+                    }
+                });
+            },
+            {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.75
+            }
+        );
+        observer.observe(section);
+    };
 
-        dots.forEach((dot) => {
-            const sectionName = dot.getAttribute("data-section");
-            dot.addEventListener("click", () => {
-                handleDotClick(sectionName);
-            });
+    indicators.forEach((indicator) => {
+        indicator.addEventListener("click", function (event) {
+            event.preventDefault();
+            document
+                .querySelector(this.getAttribute("href"))
+                .scrollIntoView({ behavior: "smooth" });
+            resetCurrentActiveIndicator();
+            this.classList.add("active");
         });
+    });
 
-        window.addEventListener("scroll", () => {
-            const scrollPosition = window.scrollY;
-            const sections = Object.values(sectionRefs);
-
-            sections.forEach((sectionRef) => {
-                const section = sectionRef.current;
-                if (!section) return;
-
-                const sectionTop = section.offsetTop;
-                const sectionBottom = sectionTop + section.clientHeight;
-
-                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                    const sectionName = section.getAttribute("data-section");
-                    dots.forEach((dot) => {
-                        dot.classList.remove("active");
-                        if (dot.getAttribute("data-section") === sectionName) {
-                            dot.classList.add("active");
-                        }
-                    });
-                }
-            });
-        });
-    }, [sectionRefs]);
+    sections.forEach(onSectionLeavesViewport);
 
     return (
         <div>
             <Header scrollToSection={scrollToSection} />
-            <div id="scrollbar" className="scrollbar">
-                <div className="dot" data-section="main"></div>
-                <div className="dot" data-section="about1"></div>
-                <div className="dot" data-section="about2"></div>
-                <div className="dot" data-section="about3"></div>
-                <div className="dot" data-section="about4"></div>
-                <div className="dot" data-section="organizers"></div>
-            </div>
-            <section ref={sectionRefs.main} data-section="main">
+            <aside>
+                <ul>
+                    <li>
+                        <a className="indicator active" href="#main"></a>
+                    </li>
+                    <li>
+                        <a className="indicator" href="#about1"></a>
+                    </li>
+                    <li>
+                        <a className="indicator" href="#about2"></a>
+                    </li>
+                    <li>
+                        <a className="indicator" href="#about3"></a>
+                    </li>
+                    <li>
+                        <a className="indicator" href="#about4"></a>
+                    </li>
+                    <li>
+                        <a className="indicator" href="#organizers"></a>
+                    </li>
+                </ul>
+            </aside>
+            <section ref={sectionRefs.main} data-section="main" id={"main"}>
                 <MainPage/>
             </section>
-            <section ref={sectionRefs.about1} data-section="about1">
+            <section ref={sectionRefs.about1} data-section="about1" id={"about1"}>
                 <About1/>
             </section>
-            <section ref={sectionRefs.about2} data-section="about2">
+            <section ref={sectionRefs.about2} data-section="about2" id={"about2"}>
                 <About2/>
             </section>
-            <section ref={sectionRefs.about3} data-section="about3">
+            <section ref={sectionRefs.about3} data-section="about3" id={"about3"}>
                 <About3/>
             </section>
-            <section ref={sectionRefs.about4} data-section="about4">
+            <section ref={sectionRefs.about4} data-section="about4" id={"about4"}>
                 <About4/>
             </section>
-            <section ref={sectionRefs.organizers} data-section="organizers">
+            <section ref={sectionRefs.organizers} data-section="organizers" id={"organizers"}>
                 <Organizers images={images} currentImage={currentImage} handleImageChange={handleImageChange} />
             </section>
         </div>

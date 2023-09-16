@@ -25,7 +25,7 @@ const MainPage = () => {
                 <CategorySlider/>
             </div>
             <div className={"content-container"}>
-                <h1>O projekcie</h1>
+                <h1>Hackaton 2023</h1>
                 <InfoBlock
                     imageSrc={rafonIN}
                     title="Gdzie?"

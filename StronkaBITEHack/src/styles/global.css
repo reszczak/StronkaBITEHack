@@ -102,3 +102,35 @@ nav li {
     margin-top: 5rem;
     margin-right: 1rem;
 }
+
+aside {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 4vw;
+}
+
+aside ul li .indicator {
+    cursor: pointer;
+    margin-top: 0.3rem;
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+}
+
+aside ul li .active {
+    transform: scale(1.7);
+    background-color: #ef8c4b;
+    border: 1px solid white;
+    transition: transform 300ms ease-in-out;
+}

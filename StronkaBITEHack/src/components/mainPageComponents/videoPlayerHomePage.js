@@ -1,10 +1,20 @@
-import React from 'react';
-import '../../styles/mainPageStyles/videoPlayer.css'
+import React, { useRef } from 'react';
+import '../../styles/mainPageStyles/videoPlayer.css';
 
 const VideoPlayer = ({ videoSrc }) => {
+    const videoRef = useRef(null);
+
+    const togglePlay = () => {
+        if (videoRef.current.paused) {
+            videoRef.current.play();
+        } else {
+            videoRef.current.pause();
+        }
+    };
+
     return (
-        <div className="video-container">
-            <video controls autoPlay loop>
+        <div className="video-container" onClick={togglePlay}>
+            <video ref={videoRef} autoPlay loop>
                 <source src={videoSrc} type="video/mp4" />
                 <track kind="captions" srcLang="pl" label="Polskie napisy" />
                 Twoja przeglądarka nie obsługuje odtwarzania filmów.
