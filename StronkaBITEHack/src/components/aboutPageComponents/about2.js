@@ -33,7 +33,7 @@ const About2 = () => {
                 <img className={"a2-img"} src={rafonA2} alt={"rafon-about2"}/>
             </div>
             <div className={"about2-paragraph-container"}>
-                <h2>Trzy różne kategorie</h2>
+                <h2>Trzy kategorie</h2>
             </div>
         </div>
     )

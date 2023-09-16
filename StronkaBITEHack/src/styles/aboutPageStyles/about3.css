@@ -2,14 +2,25 @@
     max-width: 30vw;
     max-height: 30vh;
     flex: 1;
+    border-radius: 50%;
+    border: 1px solid orange;
+}
+
+.about3-left {
+    text-align: right;
+    align: right;
+}
+
+.about3-right {
+    text-align: left;
+    align: left;
 }
 
 .about3-desc-container-left {
     width: 30vw;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    align-items: center;
+    text-align: right;
 }
 
 .about3-space {
@@ -20,8 +31,7 @@
     width: 30vw;
     display: flex;
     flex-direction: column;
-    text-align: right;
-    align-items: center;
+    text-align: left;
 }
 
 .about3-image-container {

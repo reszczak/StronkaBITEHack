@@ -2,6 +2,8 @@
     max-width: 25vw;
     max-height: 25vh;
     flex: 1;
+    border-radius: 20px;
+    border: 1px solid orange;
 }
 
 .about4-content {
@@ -26,4 +28,6 @@
 .partner-img {
     max-width: 12vw;
     height: auto;
+    border-radius: 10px;
+    border: 1px solid orange;
 }
