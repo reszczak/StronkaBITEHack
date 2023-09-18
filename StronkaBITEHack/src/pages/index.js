@@ -132,19 +132,19 @@ const HomePage = () => {
                 <img src={Layer1} alt="Layer 1" />
             </div>
             <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.65}px, ${parallaxOffset.y * 0.65}px)` }}>
-                <img src={Layer2} alt="Layer 1" />
+                <img src={Layer2} alt="Layer 2" />
             </div>
             <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.55}px, ${parallaxOffset.y * 0.55}px)` }}>
-                <img src={Layer3} alt="Layer 1" />
+                <img src={Layer3} alt="Layer 3" />
             </div>
             <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.40}px, ${parallaxOffset.y * 0.40}px)` }}>
-                <img src={Layer4} alt="Layer 1" />
+                <img src={Layer4} alt="Layer 4" />
             </div>
             <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.25}px, ${parallaxOffset.y * 0.25}px)` }}>
-                <img src={Layer5} alt="Layer 1" />
+                <img src={Layer5} alt="Layer 5" />
             </div>
             <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.15}px, ${parallaxOffset.y * 0.15}px)` }}>
-                <img src={Layer6} alt="Layer 1" />
+                <img src={Layer6} alt="Layer 6" />
             </div>
             <div className={"index-sections"}>
                 <section ref={sectionRefs.main} data-section="main" id={"main"}>
