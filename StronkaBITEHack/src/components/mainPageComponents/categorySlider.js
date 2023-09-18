@@ -24,16 +24,16 @@ const CategorySlider = ({ onBackgroundColorChange }) => {
 
         switch (activeEvent) {
             case 0:
-                body.style.setProperty('--body-background-color', '#0056b3');
+                body.style.setProperty('--body-background-color', '#1b2d48');
                 break;
             case 1:
-                body.style.setProperty('--body-background-color', '#125653');
+                body.style.setProperty('--body-background-color', '#243424');
                 break;
             case 2:
-                body.style.setProperty('--body-background-color', '#6712ab');
+                body.style.setProperty('--body-background-color', '#26253b');
                 break;
             default:
-                body.style.setProperty('--body-background-color', '#ffffff');
+                body.style.setProperty('--body-background-color', '#1b2d48');
         }
     }, [activeEvent]);
 

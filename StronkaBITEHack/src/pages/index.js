@@ -11,6 +11,12 @@ import About3 from "../components/aboutPageComponents/about3";
 import About4 from "../components/aboutPageComponents/about4";
 import Organizers from "../components/organizersComponents/organizers";
 import ImageData from "../components/organizersComponents/imageData";
+import Layer1 from "../images/background/Layer 1.png"
+import Layer2 from "../images/background/Layer 2.png"
+import Layer3 from "../images/background/Layer 3.png"
+import Layer4 from "../images/background/Layer 4.png"
+import Layer5 from "../images/background/Layer 5.png"
+import Layer6 from "../images/background/Layer 6.png"
 
 const HomePage = () => {
     const sectionRefs = {
@@ -23,6 +29,19 @@ const HomePage = () => {
     };
 
     const [isScrolling, setIsScrolling] = useState(false);
+    const [parallaxOffset, setParallaxOffset] = useState({ x: 0, y: 0 });
+
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            const xOffset = (e.clientX - window.innerWidth / 2) / 50;
+            const yOffset = (e.clientY - window.innerHeight / 2) / 50;
+            setParallaxOffset({ x: xOffset, y: yOffset });
+        };
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+        };
+    }, []);
 
     const scrollToSection = (section) => {
         setIsScrolling(true);
@@ -109,24 +128,44 @@ const HomePage = () => {
                     </li>
                 </ul>
             </aside>
-            <section ref={sectionRefs.main} data-section="main" id={"main"}>
-                <MainPage/>
-            </section>
-            <section ref={sectionRefs.about1} data-section="about1" id={"about1"}>
-                <About1/>
-            </section>
-            <section ref={sectionRefs.about2} data-section="about2" id={"about2"}>
-                <About2/>
-            </section>
-            <section ref={sectionRefs.about3} data-section="about3" id={"about3"}>
-                <About3/>
-            </section>
-            <section ref={sectionRefs.about4} data-section="about4" id={"about4"}>
-                <About4/>
-            </section>
-            <section ref={sectionRefs.organizers} data-section="organizers" id={"organizers"}>
-                <Organizers images={images} currentImage={currentImage} handleImageChange={handleImageChange} />
-            </section>
+            <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.75}px, ${parallaxOffset.y * 0.75}px)` }}>
+                <img src={Layer1} alt="Layer 1" />
+            </div>
+            <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.65}px, ${parallaxOffset.y * 0.65}px)` }}>
+                <img src={Layer2} alt="Layer 1" />
+            </div>
+            <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.55}px, ${parallaxOffset.y * 0.55}px)` }}>
+                <img src={Layer3} alt="Layer 1" />
+            </div>
+            <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.40}px, ${parallaxOffset.y * 0.40}px)` }}>
+                <img src={Layer4} alt="Layer 1" />
+            </div>
+            <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.25}px, ${parallaxOffset.y * 0.25}px)` }}>
+                <img src={Layer5} alt="Layer 1" />
+            </div>
+            <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.15}px, ${parallaxOffset.y * 0.15}px)` }}>
+                <img src={Layer6} alt="Layer 1" />
+            </div>
+            <div className={"index-sections"}>
+                <section ref={sectionRefs.main} data-section="main" id={"main"}>
+                    <MainPage/>
+                </section>
+                <section ref={sectionRefs.about1} data-section="about1" id={"about1"}>
+                    <About1/>
+                </section>
+                <section ref={sectionRefs.about2} data-section="about2" id={"about2"}>
+                    <About2/>
+                </section>
+                <section ref={sectionRefs.about3} data-section="about3" id={"about3"}>
+                    <About3/>
+                </section>
+                <section ref={sectionRefs.about4} data-section="about4" id={"about4"}>
+                    <About4/>
+                </section>
+                <section ref={sectionRefs.organizers} data-section="organizers" id={"organizers"}>
+                    <Organizers images={images} currentImage={currentImage} handleImageChange={handleImageChange} />
+                </section>
+            </div>
         </div>
     );
 };

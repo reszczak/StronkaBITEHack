@@ -2,16 +2,38 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: initial;
+    overflow: hidden;
     scroll-snap-type: y mandatory;
-
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--body-background-color, #0056b3);
+    background-color: var(--body-background-color, #1b2d48);
     color: white;
+}
+
+.index-sections {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: transform 0.2s ease;
+    pointer-events: none;
+    opacity: 0.8;
+    z-index: -10;
+}
+
+.layer img {
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
