@@ -17,6 +17,7 @@ import Layer3 from "../images/background/Layer 3.png"
 import Layer4 from "../images/background/Layer 4.png"
 import Layer5 from "../images/background/Layer 5.png"
 import Layer6 from "../images/background/Layer 6.png"
+import TechWipe from "../images/background/Slide Reveal (Blue).webm"
 
 const HomePage = () => {
     const sectionRefs = {
@@ -30,6 +31,8 @@ const HomePage = () => {
 
     const [isScrolling, setIsScrolling] = useState(false);
     const [parallaxOffset, setParallaxOffset] = useState({ x: 0, y: 0 });
+    const [isAnimationActive, setIsAnimationActive] = useState(true);
+    const [isAnimationStarted, setIsAnimationStarted] = useState(false);
 
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -43,13 +46,25 @@ const HomePage = () => {
         };
     }, []);
 
+    const [hasScrolledToNewSection, setHasScrolledToNewSection] = useState(false);
+
+    const playTechWipeVideo = () => {
+        const video = document.querySelector(".animation-video");
+        if (video) {
+            video.play();
+        }
+    };
+
+    document.documentElement.style.scrollBehavior = 'auto';
     const scrollToSection = (section) => {
         setIsScrolling(true);
-        sectionRefs[section].current.scrollIntoView({ behavior: 'smooth' });
+        setIsAnimationActive(true);
+        sectionRefs[section].current.scrollIntoView({ behavior: 'auto' });
+        setHasScrolledToNewSection(true);
     };
 
     useEffect(() => {
-        sectionRefs.main.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        sectionRefs.main.current.scrollIntoView({ behavior: 'auto', block: 'center' });
     }, []);
 
     useEffect(() => {
@@ -66,6 +81,7 @@ const HomePage = () => {
     const resetCurrentActiveIndicator = () => {
         const activeIndicator = document.querySelector(".active");
         activeIndicator.classList.remove("active");
+        setIsAnimationActive(true);
     };
 
     const onSectionLeavesViewport = (section) => {
@@ -77,6 +93,10 @@ const HomePage = () => {
                         const element = entry.target;
                         const indicator = document.querySelector(`a[href='#${element.id}']`);
                         indicator.classList.add("active");
+                        if (hasScrolledToNewSection && !isAnimationStarted) {
+                            playTechWipeVideo();
+                            setIsAnimationStarted(true);
+                        }
                         return;
                     }
                 });
@@ -95,9 +115,10 @@ const HomePage = () => {
             event.preventDefault();
             document
                 .querySelector(this.getAttribute("href"))
-                .scrollIntoView({ behavior: "smooth" });
+                .scrollIntoView({ behavior: 'instant' });
             resetCurrentActiveIndicator();
             this.classList.add("active");
+            playTechWipeVideo();
         });
     });
 
@@ -128,6 +149,11 @@ const HomePage = () => {
                     </li>
                 </ul>
             </aside>
+            {isAnimationActive && (
+                <video autoPlay muted playsInline className="animation-video">
+                    <source src={TechWipe} type="video/webm" />
+                </video>
+            )}
             <div className="layer" style={{ transform: `translate(${parallaxOffset.x * 0.75}px, ${parallaxOffset.y * 0.75}px)` }}>
                 <img src={Layer1} alt="Layer 1" />
             </div>
