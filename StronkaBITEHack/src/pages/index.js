@@ -55,16 +55,21 @@ const HomePage = () => {
         }
     };
 
-    document.documentElement.style.scrollBehavior = 'auto';
+    document.documentElement.style.scrollBehavior = 'instant';
     const scrollToSection = (section) => {
         setIsScrolling(true);
         setIsAnimationActive(true);
-        sectionRefs[section].current.scrollIntoView({ behavior: 'auto' });
-        setHasScrolledToNewSection(true);
+        setIsAnimationStarted(false);
+        setTimeout(() => {
+            sectionRefs[section].current.scrollIntoView({ behavior: 'instant' });
+            setHasScrolledToNewSection(true);
+        }, 325);
     };
 
     useEffect(() => {
-        sectionRefs.main.current.scrollIntoView({ behavior: 'auto', block: 'center' });
+        setTimeout(() => {
+            sectionRefs.main.current.scrollIntoView({ behavior: 'instant', block: 'center' });
+        }, 500);
     }, []);
 
     useEffect(() => {
@@ -113,9 +118,11 @@ const HomePage = () => {
     indicators.forEach((indicator) => {
         indicator.addEventListener("click", function (event) {
             event.preventDefault();
-            document
-                .querySelector(this.getAttribute("href"))
-                .scrollIntoView({ behavior: 'instant' });
+            setTimeout(() => {
+                document
+                    .querySelector(this.getAttribute("href"))
+                    .scrollIntoView({ behavior: 'instant' });
+            }, 500); // Pół sekundy (500 milisekund)
             resetCurrentActiveIndicator();
             this.classList.add("active");
             playTechWipeVideo();
