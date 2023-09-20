@@ -27,10 +27,10 @@ const CategorySlider = ({ onBackgroundColorChange }) => {
                 body.style.setProperty('--body-background-color', '#1b2d48');
                 break;
             case 1:
-                body.style.setProperty('--body-background-color', '#243424');
+                body.style.setProperty('--body-background-color', '#1e2e3c');
                 break;
             case 2:
-                body.style.setProperty('--body-background-color', '#26253b');
+                body.style.setProperty('--body-background-color', '#222858');
                 break;
             default:
                 body.style.setProperty('--body-background-color', '#1b2d48');
