@@ -9,7 +9,7 @@ const Organizers = ({ images, currentImage, handleImageChange }) => {
             <div className="organizers-container">
                 <div className="organizers-content">
                     <h1 className={"organizers-h1"}>Organizatorzy</h1>
-                    <div className="organizers-gallery">
+                    <div class = "circular" className="organizers-gallery">
                         <ImageGallery
                             items={images}
                             showNav={true}

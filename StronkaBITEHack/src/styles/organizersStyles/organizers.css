@@ -1,5 +1,5 @@
 .o-container {
-    margin: 0 auto;
+    margin:  auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -9,6 +9,8 @@
     width: 80vw;
     height: 80vh;
     scroll-snap-align: start;
+    margin-top: 10vh;
+
 }
 
 .organizers-container {
@@ -53,6 +55,8 @@
     justify-content: space-around;
     align-items: flex-start;
     align-content: center;
+    overflow: hidden;
+
 }
 
 .organizers-description {
@@ -71,6 +75,8 @@
     margin-left: 15%;
     width: 40%;
     height: 75vh;
+    overflow: hidden;
+    /*justify-content: center;*/
 }
 
 .footer {
@@ -85,5 +91,6 @@
     justify-content: center;
     position: relative;
     bottom: 0;
+
 
 }
