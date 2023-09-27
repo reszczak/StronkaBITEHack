@@ -4,22 +4,29 @@
     flex: 1;
     border-radius: 20px;
     border: solid 1px orange;
+    margin: 1rem;
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 3);
+    transition: 0.3s;
 }
 
 .about2-desc-container {
-    width: 30vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     align-items: center;
+    justify-content: center;
+    margin: 1rem;
 }
 
 .about2-image-container {
-    width: 45vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left:5vw;
+    justify-content: center;
+    margin: 1rem;
 }
 
 .about2-paragraph-container {
@@ -28,4 +35,5 @@
     flex-direction: column;
     text-align: center;
     justify-content: flex-start;
+    margin: 1rem;
 }
