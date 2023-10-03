@@ -181,3 +181,20 @@ aside ul li .active {
     border: 1px solid white;
     transition: transform 300ms ease-in-out;
 }
+
+@media only screen and (max-width: 768px) {
+    aside {
+        display: none;
+        pointer-events: none;
+    }
+
+    aside ul {
+        display: none;
+        pointer-events: none;
+    }
+
+    aside ul li .indicator {
+        display: none;
+        pointer-events: none;
+    }
+}
