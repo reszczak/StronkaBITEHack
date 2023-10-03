@@ -63,7 +63,8 @@ const HomePage = () => {
         setTimeout(() => {
             sectionRefs[section].current.scrollIntoView({ behavior: 'instant' });
             setHasScrolledToNewSection(true);
-        }, 325);
+        }, 350);
+        playTechWipeVideo();
     };
 
     useEffect(() => {
@@ -99,8 +100,8 @@ const HomePage = () => {
                         const indicator = document.querySelector(`a[href='#${element.id}']`);
                         indicator.classList.add("active");
                         if (hasScrolledToNewSection && !isAnimationStarted) {
-                            playTechWipeVideo();
-                            setIsAnimationStarted(true);
+                            // playTechWipeVideo();
+                            setIsAnimationStarted(false);
                         }
                     }
                 });
