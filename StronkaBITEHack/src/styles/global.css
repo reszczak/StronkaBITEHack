@@ -197,4 +197,18 @@ aside ul li .active {
         display: none;
         pointer-events: none;
     }
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        scroll-snap-type:  none;
+    }
+    .index-sections {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100vh;
+        scroll-snap-type:  none;
+    }
+
 }
