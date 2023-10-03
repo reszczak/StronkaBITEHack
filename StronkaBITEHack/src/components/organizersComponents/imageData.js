@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import rafonA1 from "../../images/rafon-about1.jpg";
+import rafonA1 from "../../images/rafon-organizer.jpg";
 import rafonA2 from "../../images/rafon-about2.jpg";
 import rafonIN from "../../images/rafon_index.jpg";
 import rafon404 from "../../images/rafon404.jpg"
