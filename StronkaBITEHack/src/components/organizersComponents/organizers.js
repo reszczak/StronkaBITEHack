@@ -11,9 +11,13 @@ const Organizers = ({ images, currentImage, handleImageChange }) => {
                     <h1 className={"organizers-h1"}>Organizatorzy</h1>
                     <div class = "circular" className="organizers-gallery">
                         <ImageGallery
-                            items={images}
+                            items={images.map((image) => ({
+                                ...image,
+                                originalClass: 'circular-image',
+                                thumbnailClass: 'circular-image',
+                            }))}
                             showNav={true}
-                            showBullets={true}
+                            showBullets={false}
                             showThumbnails={false}
                             showFullscreenButton={false}
                             showPlayButton={false}
@@ -24,8 +28,8 @@ const Organizers = ({ images, currentImage, handleImageChange }) => {
                         />
                     </div>
                     <div className="organizers-description">
-                        {/*<p>{images[currentImage].name}</p>*/}
                         <p>{images[currentImage].status}</p>
+                        <p>{images[currentImage].name}</p>
                         <p>{images[currentImage].mail}</p>
                     </div>
                 </div>

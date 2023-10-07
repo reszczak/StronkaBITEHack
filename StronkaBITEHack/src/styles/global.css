@@ -85,8 +85,8 @@ h1 {
 
 .header-button-logo {
     background-color: rgba(255,255,255,0);
-    width: 12vw;
-    height: 5vw;
+    width: 7vw;
+    height: 8vw;
     color: white;
     border: 0px;
     position: relative;
@@ -183,6 +183,7 @@ aside ul li .active {
 }
 
 @media only screen and (max-width: 768px) {
+
     aside {
         display: none;
         pointer-events: none;
@@ -197,6 +198,7 @@ aside ul li .active {
         display: none;
         pointer-events: none;
     }
+
     body, html {
         margin: 0;
         padding: 0;
@@ -204,6 +206,7 @@ aside ul li .active {
         overflow: hidden;
         scroll-snap-type:  none;
     }
+
     .index-sections {
         overflow-x: hidden;
         overflow-y: scroll;
@@ -211,4 +214,15 @@ aside ul li .active {
         scroll-snap-type:  none;
     }
 
+    .header-button {
+        display: none;
+    }
+
+    .header-button-logo {
+        width: 15vw;
+    }
+
+    .header-button-link {
+        width: 12vw;
+    }
 }

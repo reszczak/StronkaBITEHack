@@ -27,13 +27,13 @@
 
 .partner-images {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 3rem;
     text-align: center;
     align-items: center;
     justify-content: center;
     margin: 1rem;
-    margin-top: 5vh;
+    margin-top: 3vh;
     margin-bottom: 5vh;
 
 }
@@ -46,7 +46,6 @@
     margin: 1rem;
     box-shadow: 0 0 100px 0 rgba(0, 0, 0, 1);
     transition: 0.3s;
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -61,8 +60,9 @@
     }
     .partner-images
     {
-        margin-top: 10vh;
+        margin-top: 0;
         grid-template-columns: repeat(2, 1fr);
+        gap: 0.2rem 0.2rem;
     }
 
 }

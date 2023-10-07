@@ -22,8 +22,6 @@ const About4 = () => {
                 <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
                 <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
                 <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
-                <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
-                <img className={"partner-img"} src={rafonA1} alt={"rafon-partner"}/>
             </div>
         </div>
     )

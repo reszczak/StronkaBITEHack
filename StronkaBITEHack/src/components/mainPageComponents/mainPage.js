@@ -19,13 +19,13 @@ const MainPage = () => {
     };
 
     return (
-        <div className={"container"}>
+        <div className={"main-container"}>
             <div className={"slider-container"}>
                 <VideoPlayer videoSrc={rafon} />
                 <CategorySlider/>
             </div>
             <div className={"content-container"}>
-                <h1>Hackaton 2023</h1>
+                {/*<h1>Hackaton 2023</h1>*/}
                 <InfoBlock
                     imageSrc={rafonIN}
                     title="Gdzie?"

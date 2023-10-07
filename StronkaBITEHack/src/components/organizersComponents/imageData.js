@@ -9,7 +9,7 @@ const ImageData = () => {
         {
             original: rafonA1,
             thumbnail: rafonA1,
-            description: 'Konrad Krzemiński',
+            description: '',
             name: 'Konrad Krzemiński',
             status: 'Główny koordynator projektu',
             mail: 'konrad.krzeminski@best.krakow.pl',
@@ -18,7 +18,7 @@ const ImageData = () => {
         {
             original: rafonA1,
             thumbnail: rafonA1,
-            description: 'Mateusz Wirkijowski',
+            description: '',
             name: 'Mateusz Wirkijowski',
             status: 'Koordynator ds. Grafiki i Promocji',
             mail: 'mateusz.wirkijowski@best.krakow.pl',
@@ -27,7 +27,7 @@ const ImageData = () => {
         {
             original: rafonA1,
             thumbnail: rafonA1,
-            description: 'Karolina Sędzik',
+            description: '',
             name: 'Karolina Sędzik',
             status: 'Koordynator ds. Zasobów Ludzkich',
             mail: 'karolina.sedzik@best.krakow.pl',
@@ -36,7 +36,7 @@ const ImageData = () => {
         {
             original: rafonA1,
             thumbnail: rafonA1,
-            description: 'Weronika Tokarczyk',
+            description: '',
             name: 'Weronika Tokarczyk',
             status: 'Koordynator ds. Logistyki',
             mail: 'weronika.tokarczyk@best.krakow.pl',
@@ -45,7 +45,7 @@ const ImageData = () => {
         {
             original: rafonA1,
             thumbnail: rafonA1,
-            description: 'Tomasz Kaczor',
+            description: '',
             name: 'Tomasz Kaczor',
             status: 'Koordynator ds. Kontaktu z firmami',
             mail: 'tomasz.kaczor@best.krakow.pl',
@@ -54,7 +54,7 @@ const ImageData = () => {
         {
             original: rafonA1,
             thumbnail: rafonA1,
-            description: 'Konrad Korzec',
+            description: '',
             name: 'Konrad Korzec',
             status: 'Koordynator ds. Merytoryki',
             mail: 'konrad.korzec@best.krakow.pl',
@@ -63,7 +63,7 @@ const ImageData = () => {
         {
             original: rafonA1,
             thumbnail: rafonA1,
-            description: 'Dawid Reszczyński',
+            description: '',
             name: 'Dawid Reszczyński',
             status: 'Koordynator ds. Merytoryki',
             mail: 'dawid.reszczynski@best.krakow.pl',

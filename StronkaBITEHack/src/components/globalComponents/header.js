@@ -11,7 +11,7 @@ const Header = ({ scrollToSection }) => {
                 <ul className={"header-ul"}>
                     <li>
                         <button className={"header-button-logo"} onClick={() => scrollToSection('main')}>
-                            <img src={bestLogo} alt={"Logo"} style={{ width: '5vw', height: '10vh' }} />
+                            <img src={bestLogo} alt={"Logo"} />
                         </button>
                     </li>
                     <li><button className={"header-button"} onClick={() => scrollToSection('about1')}>O projekcie</button></li>
