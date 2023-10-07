@@ -61,6 +61,7 @@
     }
     .partner-images
     {
+        margin-top: 10vh;
         grid-template-columns: repeat(2, 1fr);
     }
 
