@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/global.css'
 import '../../styles/aboutPageStyles/about3.css'
-import rafonA2 from "../../images/rafon-about2.jpg";
+import about3img from "../../images/about3img.png";
 
 const About3 = () => {
     return (
@@ -24,7 +24,7 @@ const About3 = () => {
                 </p>
             </div>
             <div className={"about3-image-container"}>
-                <img className={"a3-img"} src={rafonA2} alt={"rafon-about3"}/>
+                <img className={"a3-img"} src={about3img} alt={"about3img"}/>
             </div>
             <div className={"about3-desc-container-right"}>
                 <h2 className={"about3-right"}>Czym dokładnie jest BH?</h2>

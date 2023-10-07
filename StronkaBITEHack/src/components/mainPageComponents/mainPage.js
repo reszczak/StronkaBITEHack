@@ -5,18 +5,16 @@ import VideoPlayer from './videoPlayerHomePage';
 import InfoBlock from './infoBlock';
 import CategorySlider from './CategorySlider';
 import rafon from '../../images/Rafonix - przejebane życie square.mp4';
-import rafonIN from '../../images/rafon_index.jpg';
+import main1 from '../../images/mainimg1.png';
+import main2 from '../../images/mainimg2.png';
+import hackaton from '../../images/hackaton.png';
+import button1 from '../../images/button1.png';
+import button2 from '../../images/button2.png';
+import button3 from '../../images/button3.png';
 
 const MainPage = () => {
     const [buttonBackgroundColor, setButtonBackgroundColor] = useState('orange');
-
-    const handleButtonHover = () => {
-        setButtonBackgroundColor('#e95800');
-    };
-
-    const handleButtonLeave = () => {
-        setButtonBackgroundColor('orange');
-    };
+    const [imageSrc, setImageSrc] = useState(button1);
 
     return (
         <div className={"main-container"}>
@@ -25,28 +23,25 @@ const MainPage = () => {
                 <CategorySlider/>
             </div>
             <div className={"content-container"}>
-                {/*<h1>Hackaton 2023</h1>*/}
+                <img className={""} src={hackaton} alt={"hackaton"}/>
                 <InfoBlock
-                    imageSrc={rafonIN}
+                    imageSrc={main1}
                     title="Gdzie?"
                     content="Klub Studio"
                     content2={"Miasteczko Studenckie AGH"}
                 />
                 <InfoBlock
-                    imageSrc={rafonIN}
+                    imageSrc={main2}
                     title="Kiedy?"
                     content2="20-21.01.2023"
                 />
                 <div className="event-slider">
                     <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                        <button
-                            className="event-button"
-                            style={{ backgroundColor: buttonBackgroundColor }}
-                            onMouseEnter={handleButtonHover}
-                            onMouseLeave={handleButtonLeave}
-                        >
-                            Zapisz się!
-                        </button>
+                        <img
+                            src={button1}
+                            alt="Zapisz się!"
+                            className="event-image"
+                        />
                     </a>
                 </div>
             </div>

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/global.css';
 import '../../styles/aboutPageStyles/about1.css';
-import rafonA1 from "../../images/rafon-about1.jpg";
+import about1_1 from "../../images/about1img1.png";
+import about1_2 from "../../images/about1img2.png";
 
 const About1 = () => {
     const [loadingText, setLoadingText] = useState('Loading...');
@@ -32,8 +33,8 @@ const About1 = () => {
             <div className={"a1-container"}>
                 <div className={"about1-image-container"}>
                     <h1></h1>
-                    <img className={"a1-img"} src={rafonA1} alt={"rafon-about1"}/>
-                    <img className={"a1-img"} src={rafonA1} alt={"rafon-about1"}/>
+                    <img className={"a1-img"} src={about1_1} alt={"about1_1"}/>
+                    <img className={"a1-img"} src={about1_2} alt={"about1_2"}/>
                 </div>
                 <div className={"about1-desc-container"}>
                     <h1>O projekcie</h1>

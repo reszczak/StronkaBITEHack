@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Tektur&display=swap');
+
 .info-block {
+    font-family: 'Exo 2', sans-serif;
     display: flex;
     width: 100%;
     max-width: 90vw;

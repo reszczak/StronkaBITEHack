@@ -10,6 +10,7 @@
 }
 
 .video-container {
+    /*background-image: url("../../images/circle.png");*/
     max-width: 30vw;
     border-radius: 50%;
     overflow: hidden;

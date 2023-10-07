@@ -28,10 +28,7 @@
     width: 30vw;
     height: 30vh;
     flex: 1;
-    border-radius: 20px;
-    border: 1px solid orange;
     margin: 1rem;
-    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 3);
     transition: 0.3s;
 }
 
@@ -112,7 +109,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (max-height: 1000px) {
     .a1-container {
         flex-direction: column;
         font-size: 0.8rem;

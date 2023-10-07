@@ -1,5 +1,5 @@
 import React from 'react';
-import bestLogo from "../../images/best.png"
+import bestLogo from "../../images/BH_logo.png"
 import Fb from "../../images/fb.png"
 import LinkedIn from "../../images/in.png"
 import Insta from "../../images/insta.png"
@@ -19,7 +19,7 @@ const Header = ({ scrollToSection }) => {
                     <li><a href={'https://soundcloud.com/flajlemon/rafonixinawetkiedybedesam'} target="_blank" rel="noopener noreferrer">
                         <button className={"header-button"}>Regulamin</button>
                     </a></li>
-                    <li><a href={'https://soundcloud.com/flajlemon/rafonixinawetkiedybedesam'} target="_blank" rel="noopener noreferrer">
+                    <li><a href={'https://www.newsite.best.krakow.pl/'} target="_blank" rel="noopener noreferrer">
                         <button className={"header-button"}>BEST AGH Kraków</button>
                     </a></li>
                     <li className={"li-blank"}></li>

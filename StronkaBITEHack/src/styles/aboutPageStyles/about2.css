@@ -35,10 +35,7 @@
     width: 35vw;
     height: 35vh;
     flex: 1;
-    border-radius: 20px;
-    border: solid 1px orange;
     margin: 1rem;
-    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 3);
     transition: 0.3s;
 }
 

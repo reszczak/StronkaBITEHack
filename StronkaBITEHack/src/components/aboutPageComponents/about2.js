@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/global.css'
 import '../../styles/aboutPageStyles/about2.css'
-import rafonA2 from "../../images/rafon-about2.jpg";
+import about2img from "../../images/about2img.png";
 
 const About2 = () => {
     return (
@@ -39,7 +39,7 @@ const About2 = () => {
                 <div className={"about2-paragraph-container"}>
                     <h2>Trzy kategorie</h2>
                 </div>
-                <img className={"a2-img"} src={rafonA2} alt={"rafon-about2"}/>
+                <img className={"a2-img"} src={about2img} alt={"about2img"}/>
             </div>
         </div>
     )

@@ -1,10 +1,7 @@
 .a3-img {
-    max-width: 40vw;
-    max-height: 40vh;
+    max-width: 70vw;
+    max-height: 70vh;
     flex: 1;
-    border-radius: 50%;
-    border: 1px solid orange;
-    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 3);
     transition: 0.3s;
     margin: 1rem;
 }
@@ -52,14 +49,11 @@
 
 @media only screen and (max-width: 768px) {
     .a3-img {
-        width: 250px;
-        height: 250px;
-        max-width: 40vw;
-        max-height: 40vh;
+        width: 210px;
+        height: 210px;
+        max-width: 30vw;
+        max-height: 30vh;
         flex: 1;
-        border-radius: 50%;
-        border: 1px solid orange;
-        box-shadow: 0 0 100px 0 rgba(0, 0, 0, 3);
         transition: 0.3s;
         margin: 1rem;
     }
