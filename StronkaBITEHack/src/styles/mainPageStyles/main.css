@@ -68,10 +68,13 @@
     content: url('../../images/button3.png');
 }
 
-
 .slider-container {
     display: flex;
     flex-direction: column;
+}
+
+.hackaton-img {
+    height: 12vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -100,5 +103,9 @@
     .event-image {
         width: 65vw;
         height: 7vh;
+    }
+
+    .hackaton-img {
+        display: none;
     }
 }

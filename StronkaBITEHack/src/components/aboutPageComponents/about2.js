@@ -8,8 +8,8 @@ const About2 = () => {
         <div className={"about2-container"}>
             <div className={"about2-desc-container"}>
                 <div className={"about2-category"}>
-                    <h2>Kategoria klasyczna</h2>
-                    <p>
+                    <h2 className={"about2-h2"}>Kategoria klasyczna</h2>
+                    <p className={"about2-text"}>
                         Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
                         nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
                         itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
@@ -17,8 +17,8 @@ const About2 = () => {
                     </p>
                 </div>
                 <div className={"about2-category"}>
-                    <h2>Kategoria robotyczna</h2>
-                    <p>
+                    <h2 className={"about2-h2"}>Kategoria robotyczna</h2>
+                    <p className={"about2-text"}>
                         Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
                         nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
                         itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
@@ -26,8 +26,8 @@ const About2 = () => {
                     </p>
                 </div>
                 <div className={"about2-category"}>
-                    <h2>Kategoria GameJam</h2>
-                    <p>
+                    <h2 className={"about2-h2"}>Kategoria GameJam</h2>
+                    <p className={"about2-text"}>
                         Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
                         nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
                         itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
@@ -37,7 +37,7 @@ const About2 = () => {
             </div>
             <div className={"about2-img-title"}>
                 <div className={"about2-paragraph-container"}>
-                    <h2>Trzy kategorie</h2>
+                    <h2 className={"about2-title"}>Trzy kategorie</h2>
                 </div>
                 <img className={"a2-img"} src={about2img} alt={"about2img"}/>
             </div>

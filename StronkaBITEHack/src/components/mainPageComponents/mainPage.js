@@ -23,7 +23,7 @@ const MainPage = () => {
                 <CategorySlider/>
             </div>
             <div className={"content-container"}>
-                <img className={""} src={hackaton} alt={"hackaton"}/>
+                <img className={"hackaton-img"} src={hackaton} alt={"hackaton"}/>
                 <InfoBlock
                     imageSrc={main1}
                     title="Gdzie?"
@@ -33,7 +33,7 @@ const MainPage = () => {
                 <InfoBlock
                     imageSrc={main2}
                     title="Kiedy?"
-                    content2="20-21.01.2023"
+                    content="20-21.01.2024r"
                 />
                 <div className="event-slider">
                     <a href="http://google.com" target="_blank" rel="noopener noreferrer">

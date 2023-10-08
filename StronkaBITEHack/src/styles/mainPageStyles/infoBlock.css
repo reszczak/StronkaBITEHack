@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Montserrat:wght@500&family=Tektur&display=swap');
 
 .info-block {
     font-family: 'Exo 2', sans-serif;
@@ -6,10 +6,10 @@
     width: 100%;
     max-width: 90vw;
     max-height: 20vh;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid orange;
     border-radius: 20px;
-    background-color: white;
+    background-color: #cbcbc1;
     color: black;
 }
 
@@ -18,7 +18,6 @@
     max-width: 50vw;
     max-height: 20vh;
     flex: 1;
-    border-radius: 20px;
 }
 
 .info-image img{
@@ -33,11 +32,29 @@
     flex: 2;
 }
 
+.infoBl-title {
+    color: black;
+    font-size: 1.3rem;
+    margin-top: 1vh;
+}
+
+.infoBl-content {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #041038;
+}
+
+.infoBl-content2 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #041038;
+}
+
 @media only screen and (max-width: 768px) {
 
     .info-block {
         max-height: 15vh;
-        margin-top: 1rem;
+        margin-bottom: 0.2rem;
         width: 90vw;
     }
 

@@ -7,25 +7,27 @@
 }
 
 .about3-left {
-    text-align: center;
+    text-align: right;
     align: center;
-
+    font-family: 'Exo 2', sans-serif;
 }
 
 .about3-right {
-    text-align: center;
+    text-align: left;
     align: center;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .about3-desc-container-left {
     width: 30vw;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: right;
 }
 
 .about3-text {
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about3-space {
@@ -36,7 +38,7 @@
     width: 30vw;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
 }
 
 .about3-image-container {
@@ -63,14 +65,16 @@
     }
 
     .about3-text {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
 
     .about3-desc-container-left {
         font-size: 0.8em;
+        /*width: 28vw;*/
     }
 
     .about3-desc-container-right {
         font-size: 0.8em;
+        /*width: 28vw;*/
     }
 }

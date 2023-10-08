@@ -28,9 +28,10 @@ const Organizers = ({ images, currentImage, handleImageChange }) => {
                         />
                     </div>
                     <div className="organizers-description">
-                        <p>{images[currentImage].status}</p>
-                        <p>{images[currentImage].name}</p>
-                        <p>{images[currentImage].mail}</p>
+                        <p className={"organizer-name"}>{images[currentImage].name}</p>
+                        <p className={"organizer-status"}>{images[currentImage].status}</p>
+                        <hr className={"organizer-hr"}/>
+                        <p className={"organizer-mail"}>{images[currentImage].mail}</p>
                     </div>
                 </div>
                 <div className="organizers-gallery-right">

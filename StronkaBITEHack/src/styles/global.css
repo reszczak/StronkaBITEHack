@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Montserrat:wght@500&family=Tektur&display=swap');
 
 body, html {
     margin: 0;
@@ -87,9 +87,9 @@ h1 {
 
 .header-button-logo {
     background-color: rgba(255,255,255,0);
-    margin-top: 30px;
-    width: 11vw;
-    height: 10vw;
+    margin-top: 45px;
+    width: 13vw;
+    height: 10vh;
     color: white;
     border: 0px;
     position: relative;
@@ -223,7 +223,9 @@ aside ul li .active {
     }
 
     .header-button-logo {
-        width: 15vw;
+        width: 25vw;
+        height: 25vh;
+        margin: 0;
     }
 
     .header-button-link {

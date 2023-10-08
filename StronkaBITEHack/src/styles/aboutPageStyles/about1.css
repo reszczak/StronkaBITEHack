@@ -9,6 +9,8 @@
     width: 90vw;
     height: 100vh;
     scroll-snap-align: start;
+    font-family: 'Exo 2', sans-serif;
+    color: #cbcbc1;
 }
 
 .a1-container {
@@ -22,6 +24,17 @@
     width: 90vw;
     height: 85vh;
     scroll-snap-align: start;
+}
+
+.about1-h1 {
+    margin-bottom: 2vh;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.about1-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
 }
 
 .a1-img {
@@ -53,12 +66,17 @@
     text-align: center;
 }
 
+.about1-tip {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .loading-text {
     font-size: 1.2rem;
     display: inline-block;
     position: relative;
     opacity: 0;
     animation: jump 1s infinite alternate;
+    font-weight: bolder;
 }
 
 .loading-text:nth-child(1) {
@@ -117,6 +135,19 @@
 
     .about1-desc-container {
         width: 90vw;
+    }
+
+    .about1-h1 {
+        margin-bottom: 2vh;
+        font-size: 1.7rem;
+    }
+
+    .about1-text {
+        font-size: 0.7rem;
+    }
+
+    .about1-tip {
+        font-size: 0.7rem;
     }
 
     .about1-image-container {

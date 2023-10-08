@@ -11,6 +11,8 @@
 
 .video-container {
     /*background-image: url("../../images/circle.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
     max-width: 30vw;
     border-radius: 50%;
     overflow: hidden;

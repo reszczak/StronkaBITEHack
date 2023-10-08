@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/mainPageStyles/categorySlider.css';
 import '../../styles/global.css'
+import arrow1 from '../../images/arrow-left.png';
+import arrow2 from '../../images/arrow-right.png';
+import hackaton from "../../images/hackaton.png";
 
 const CategorySlider = ({ onBackgroundColorChange }) => {
     const events = [
@@ -40,9 +43,13 @@ const CategorySlider = ({ onBackgroundColorChange }) => {
     return (
         <div>
             <div className="event-slider">
-                <div className="arrow left-arrow" onClick={prevEvent}>←</div>
+                <div className="arrow left-arrow" onClick={prevEvent}>
+                    <img className={"arrow-img"} src={arrow1} alt={"arrow1"}/>
+                </div>
                 <div className="event-name">{events[activeEvent].name}</div>
-                <div className="arrow right-arrow" onClick={nextEvent}>→</div>
+                <div className="arrow right-arrow" onClick={nextEvent}>
+                    <img className={"arrow-img"} src={arrow2} alt={"arrow2"}/>
+                </div>
             </div>
         </div>
     );

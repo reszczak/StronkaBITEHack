@@ -9,9 +9,9 @@ const InfoBlock = ({ imageSrc, title, content, content2 }) => {
                 <img src={imageSrc} alt={`Opis ${title}`} />
             </div>
             <div className="info-text">
-                <h3>{title}</h3>
-                <h4>{content}</h4>
-                <p>{content2}</p>
+                <p className={"infoBl-title"}>{title}</p>
+                <p className={"infoBl-content"}>{content}</p>
+                <p className={"infoBl-content2"}>{content2}</p>
             </div>
         </div>
     );
