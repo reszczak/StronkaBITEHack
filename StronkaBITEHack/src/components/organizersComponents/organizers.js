@@ -2,6 +2,8 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import '../../styles/organizersStyles/organizers.css'
+import Best_logo from "../../images/best_logo.png"
+import LinkedIn from "../../images/in.png";
 
 const Organizers = ({ images, currentImage, handleImageChange }) => {
     return (
@@ -39,7 +41,17 @@ const Organizers = ({ images, currentImage, handleImageChange }) => {
                 </div>
             </div>
             <div className="footer">
-                CHUJ
+                <div className={"footer-logo"}>
+                    <img src={Best_logo} alt={"Best_logo"}/>
+                </div>
+                <div className={"footer-best-info"}>
+                    <h2 className={"best-title"}>Stowarzyszenie BEST AGH KRAKÓW</h2>
+                    DS I "Alfa" BLOK I<br/>
+                    Ul. Reymonta 17/E14<br/>
+                    30-059 Kraków
+                </div>
+                <div className={"empty-space"}>
+                </div>
             </div>
         </div>
     );

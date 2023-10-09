@@ -75,6 +75,7 @@
 
 .hackaton-img {
     height: 12vh;
+    margin-bottom: 1vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -106,6 +107,8 @@
     }
 
     .hackaton-img {
-        display: none;
+        /*display: none;*/
+        height: 7vh;
+        margin: 0;
     }
 }

@@ -76,13 +76,34 @@
     width: 100vw;
     background-color: rgba(0,0,0,0.2);
     color: white;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
     text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     bottom: 0;
+    overflow: hidden;
+}
+
+.footer-logo {
+    /*height: 12vh;*/
+    width: calc(8vw + 8vh)
+}
+
+.footer-best-info {
+    display: flex;
+    flex-direction: column;
+    /*text-align: left;*/
+    font-size: 1rem;
+}
+
+.best-title {
+    margin-bottom: 1vh;
+}
+
+.empty-space {
+    width: 15vw;
 }
 
 .organizer-name {
@@ -162,12 +183,26 @@
     .footer{
         height: 10vh;
         width: 100vw;
-        display: block;
-        text-align: center;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
         position: relative;
         bottom: 0;
+    }
+
+    .footer-logo {
+        width: 25vw;
+        height: 25vh;
+    }
+
+    .footer-best-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5rem;
+    }
+
+    .best-title {
+        margin-top: 1.5vh;
+    }
+
+    .empty-space {
+        width: 25vw;
     }
 }

@@ -70,4 +70,12 @@
     .info-text {
         font-size: 0.8rem;
     }
+
+    .infoBl-content {
+        font-size: 1.1rem;
+    }
+
+    .infoBl-content2 {
+        font-size: 0.8rem;
+    }
 }
