@@ -9,7 +9,7 @@
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
-    margin-top: 10vh;
+    /*margin-top: 10vh;*/
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -138,7 +138,6 @@
         width: 100vw;
         height: 80vh;
         scroll-snap-align: start;
-        margin-top: 10vh;
     }
 
     .organizers-gallery-right {
@@ -200,6 +199,75 @@
 
     .best-title {
         margin-top: 1.5vh;
+    }
+
+    .empty-space {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .o-container {
+        /*margin: 0 auto;*/
+        /*display: flex;*/
+        /*flex-direction: row;*/
+        /*flex-wrap: wrap;*/
+        /*justify-content: space-around;*/
+        /*align-items: flex-start;*/
+        /*align-content: center;*/
+        /*width: 100vw;*/
+        height: 60vh;
+        /*scroll-snap-align: start;*/
+        /*overflow-x: hidden;*/
+    }
+
+    .organizers-h1 {
+        margin-bottom: 5vh;
+    }
+
+    .organizers-gallery {
+        width: 275px;
+        height: 275px;
+    }
+
+    .organizer-name {
+        font-size: 1rem;
+    }
+
+    .organizer-status {
+        font-size: 0.8rem;
+        margin-bottom: 1vh;
+    }
+
+    .organizer-mail {
+        font-size: 0.8rem;
+    }
+
+    .organizer-hr {
+        margin-bottom: 1vh;
+    }
+
+    .footer{
+        height: 10vh;
+        width: 100vw;
+        position: relative;
+        bottom: 0;
+    }
+
+    .footer-logo {
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .footer-best-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.45rem;
+    }
+
+    .best-title {
+        margin-top: 1.5vh;
+        font-size: 0.55rem;
     }
 
     .empty-space {

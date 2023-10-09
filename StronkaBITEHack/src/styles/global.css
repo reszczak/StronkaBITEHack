@@ -232,3 +232,30 @@ aside ul li .active {
         width: 12vw;
     }
 }
+
+@media only screen and (max-width: 420px) {
+
+    .header-button-logo {
+        width: 25vw;
+        height: 25vh;
+        margin: 0;
+    }
+
+    .header-button-link {
+        width: 12vw;
+        margin: 0;
+    }
+
+    .li-blank {
+        width:0;
+    }
+
+    .header-button-link img {
+        height: 28px;
+        width: 28px;
+    }
+
+    nav li {
+        margin-right: 0.7rem;
+    }
+}

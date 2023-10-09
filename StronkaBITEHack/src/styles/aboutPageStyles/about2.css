@@ -109,3 +109,43 @@
         margin-bottom: 2vh;
     }
 }
+
+@media only screen and (max-width: 420px) {
+
+    .about2-container {
+        height: 90vh;
+    }
+
+    .about2-desc-container {
+        font-size: 0.7rem;
+    }
+
+    .a2-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about2-paragraph-container {
+        width: 75vw;
+    }
+
+    .about2-category {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about2-text {
+        font-size: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .about2-title {
+        font-size: 1rem;
+        margin-bottom: 1vh;
+    }
+
+    .about2-h2 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+}

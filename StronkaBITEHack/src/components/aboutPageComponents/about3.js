@@ -5,7 +5,7 @@ import about3img from "../../images/about3img.png";
 
 const About3 = () => {
     return (
-        <div className={"container"}>
+        <div className={"about3-container"}>
             <div className={"about3-desc-container-left"}>
                 <h2 className={"about3-left"}>Przebieg wydarzenia</h2>
                 <p className={"about3-text"}>

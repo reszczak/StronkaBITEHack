@@ -3,7 +3,6 @@ import '../../styles/mainPageStyles/categorySlider.css';
 import '../../styles/global.css'
 import arrow1 from '../../images/arrow-left.png';
 import arrow2 from '../../images/arrow-right.png';
-import hackaton from "../../images/hackaton.png";
 
 const CategorySlider = ({ onBackgroundColorChange }) => {
     const events = [

@@ -166,3 +166,52 @@
         font-size: 0.85rem;
     }
 }
+
+@media only screen and (max-width: 420px) {
+
+    .about1-bigger-container {
+        height: 55vh;
+    }
+
+    .a1-container {
+        font-size: 0.6rem;
+        justify-content: center;
+    }
+
+    .about1-desc-container {
+        width: 90vw;
+        margin-top: 0;
+    }
+
+    .about1-h1 {
+        margin-bottom: 2vh;
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+    .about1-text {
+        font-size: 0.6rem;
+    }
+
+    .about1-image-container {
+        max-width: 60vw;
+        width: 50vw;
+        align-items: center;
+        margin-top: 1vh;
+        margin-bottom: 0.1vh;
+    }
+
+    .a1-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about1-loading-container {
+        display: none;
+    }
+
+    .about1-tip {
+        display: none;
+    }
+
+}
