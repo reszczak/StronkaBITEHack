@@ -35,7 +35,7 @@ const MainPage = () => {
                     title="Kiedy?"
                     content="20-21.01.2024r"
                 />
-                <div className="event-slider">
+                <div className={"main-button"}>
                     <a href="http://google.com" target="_blank" rel="noopener noreferrer">
                         <img
                             src={button1}

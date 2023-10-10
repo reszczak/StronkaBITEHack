@@ -231,6 +231,13 @@ aside ul li .active {
     .header-button-link {
         width: 12vw;
     }
+
+    .layer {
+        width: 90vw;
+        height: 100%;
+
+        /*display: none;*/
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -257,5 +264,12 @@ aside ul li .active {
 
     nav li {
         margin-right: 0.7rem;
+    }
+
+    .layer {
+        width: 93vw;
+        height: 100%;
+
+        /*display: none;*/
     }
 }
