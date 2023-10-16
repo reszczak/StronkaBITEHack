@@ -24,7 +24,13 @@
     border: 1px solid orange;
     margin: 1rem;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 3);
-    transition: 0.3s;
+    /*transition: 0.3s;*/
+    opacity: 0;
+}
+
+.a4-img.appear {
+    transition: 1.5s;
+    opacity: 1;
 }
 
 .about4-content {
@@ -64,7 +70,13 @@
     border: 1px solid orange;
     margin: 1rem;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 1);
-    transition: 0.1s;
+    /*transition: 0.3s;*/
+    opacity: 0;
+}
+
+.partner-img.appear {
+    transition: 2.5s;
+    opacity: 1;
 }
 
 .about4-partner {

@@ -13,12 +13,14 @@ import hy from "../../images/hackyeah_logo_czarne.jpg"
 const About4 = () => {
 
     useEffect(() => {
-        const pictures = document.querySelectorAll('.partner-img');
+        const pictures = document.querySelectorAll('.partner-img, .a4-img');
 
-        const observer = new IntersectionObserver((notes) => {
-            notes.forEach((note) => {
-                if (note.isIntersecting) {
-                    note.target.classList.add('appear');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                } else {
+                    entry.target.classList.remove('appear');
                 }
             });
         });
