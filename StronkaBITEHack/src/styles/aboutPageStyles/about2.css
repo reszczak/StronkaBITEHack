@@ -21,7 +21,7 @@
     text-align: left;
     align-items: center;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     /*margin: 1rem;*/
 }
 
@@ -113,6 +113,7 @@
 @media only screen and (max-width: 420px) {
 
     .about2-container {
+        margin-top: 4vh;
         height: 90vh;
     }
 

@@ -75,7 +75,7 @@
     }
 
     .about3-space {
-        height: 20vh;
+        height: 15vh;
     }
 
     .about3-text {
@@ -84,12 +84,16 @@
 
     .about3-desc-container-left {
         font-size: 0.8em;
-        /*width: 28vw;*/
+        width: 35vw;
     }
 
     .about3-desc-container-right {
         font-size: 0.8em;
-        /*width: 28vw;*/
+        width: 35vw;
+    }
+
+    .about3-image-container {
+        width: 20vw;
     }
 }
 
@@ -102,15 +106,17 @@
 
     .about3-image-container {
         width: 20vw;
+        z-index: 910;
     }
+
     .about3-left {
-        font-size: 1rem;
-        z-index: 1000;
+        font-size: 0.8rem;
+        z-index: 1010;
     }
 
     .about3-right {
-        font-size: 1rem;
-        z-index: 1000;
+        font-size: 0.8rem;
+        z-index: 1010;
     }
 
     .a3-img {
@@ -126,9 +132,9 @@
     }
 
     .about3-text {
-        font-size: 0.55rem;
+        font-size: 0.50rem;
         margin-bottom: 4vh;
-        z-index: 1000;
+        z-index: 1010;
     }
 
     .about3-desc-container-left {

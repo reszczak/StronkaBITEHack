@@ -10,28 +10,28 @@ const About2 = () => {
                 <div className={"about2-category"}>
                     <h2 className={"about2-h2"}>Kategoria klasyczna</h2>
                     <p className={"about2-text"}>
-                        Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
-                        nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
-                        itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
-                        exercitationem qui magni deserunt ea voluptatem
+                        Zadaniem waszej drużyny będzie rozwiązanie zadanego problemu poprzez nadanie
+                        swoim pomysłom odpowiedniego kształtu. Macie swój ulubiony język programowania?
+                        Bardzo dobrze się składa! Na BITEhacku macie pełną dowolność,
+                        a rozwiązanie problemu zależy tylko od waszej twórczości!
                     </p>
                 </div>
                 <div className={"about2-category"}>
                     <h2 className={"about2-h2"}>Kategoria robotyczna</h2>
                     <p className={"about2-text"}>
-                        Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
-                        nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
-                        itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
-                        exercitationem qui magni deserunt ea voluptatem
+                        Waszym zadaniem będzie zbudowanie i zaprogramowanie od podstaw działającego robota,
+                        a to wszystko przy kompleksowym wsparciu mentorów. Używać będziecie platformy
+                        programistycznej, dodatkowych narzędzi, a także innych niezbędnych komponentów,
+                        które my Wam zapewnimy. Do dzieła!
                     </p>
                 </div>
                 <div className={"about2-category"}>
                     <h2 className={"about2-h2"}>Kategoria GameJam</h2>
                     <p className={"about2-text"}>
-                        Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
-                        nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
-                        itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
-                        exercitationem qui magni deserunt ea voluptatem
+                        Wasz zespół zmierzy się z wyzwaniem stworzenia gry, która oczaruje nasze jury.
+                        Wasze rozwiązanie musi spełniać założenia określone w temacie kategorii, ogłoszone
+                        w chwili rozpoczęcia wydarzenia. Może być to gra przeglądarkowa, komputerowa lub mobilna.
+                        Pełna dowolność co do środowiska pozwoli Wam w pełni uwydatnić waszą kreatywność.
                     </p>
                 </div>
             </div>

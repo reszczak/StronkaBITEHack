@@ -42,10 +42,11 @@ const About1 = () => {
                 <div className={"about1-desc-container"}>
                     <h1 className={"about1-h1"}>O projekcie</h1>
                     <p className={"about1-text"}>
-                        Lorem ipsum dolor sit amet. Ea modi unde ut architecto nemo rem dolor
-                        nostrum sit quidem sint qui cupiditate numquam eum quasi commodi. Est
-                        itaque pariatur ut nesciunt repudiandae qui tempora dignissimoId tenetur
-                        exercitationem qui magni deserunt ea voluptatem
+                        BITEhack (BEST IT Extended Hackathon) jest konkursem programistyczno - robotycznym
+                        skierowanym dla wszystkich studentów, niezależnie od uczelni na której studiują,
+                        organizowanym w Klubie Studio tuż przy Akademii Górniczo-Hutniczej w Krakowie. Głównym
+                        zadaniem wydarzenia jest stworzenie innowacyjnego projektu w ciągu jednej doby.
+                        Zespoły mogą składać się maksymalnie z czterech uczestników.
                     </p>
                 </div>
             </div>
