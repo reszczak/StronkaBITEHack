@@ -151,15 +151,15 @@
     }
 
     .about1-image-container {
-        max-width: 80vw;
-        width:80vw;
+        max-width: 60vw;
+        width: 60vw;
         align-items: center;
         margin-top: 5vh;
     }
 
     .a1-img {
-        width: 300px;
-        height: 300px;
+        width: 220px;
+        height: 220px;
     }
 
     .about1-loading-container {
