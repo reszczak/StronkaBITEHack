@@ -5,6 +5,7 @@ import VideoPlayer from './videoPlayerHomePage';
 import InfoBlock from './infoBlock';
 import CategorySlider from './CategorySlider';
 import rafon from '../../images/Rafonix - przejebane życie square.mp4';
+import bh_mov from '../../images/bh_mov.mp4';
 import main1 from '../../images/mainimg1.png';
 import main2 from '../../images/mainimg2.png';
 import hackaton from '../../images/hackaton.png';
@@ -19,7 +20,7 @@ const MainPage = () => {
     return (
         <div className={"main-container"}>
             <div className={"slider-container"}>
-                <VideoPlayer videoSrc={rafon} />
+                <VideoPlayer videoSrc={bh_mov} />
                 <CategorySlider/>
             </div>
             <div className={"content-container"}>
