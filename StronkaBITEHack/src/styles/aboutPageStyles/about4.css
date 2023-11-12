@@ -1,9 +1,9 @@
 .about4-container {
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: center;
     width: 90vw;
@@ -53,7 +53,7 @@
 
 .partner-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem 4rem;
     text-align: center;
     align-items: center;
@@ -65,9 +65,9 @@
 }
 
 .partner-img {
-    max-width: 15vw;
-    width: 15vw;
-    height: 15vh;
+    max-width: 17vw;
+    width: 17vw;
+    height: 17vh;
     border-radius: 10px;
     border: 1px solid orange;
     margin: 1rem;
@@ -84,7 +84,9 @@
 }
 
 .about4-partner {
-    margin: 0;
+    margin-bottom: 2vh;
+    font-size: 4vh;
+    font-family: 'Exo 2', sans-serif;
 }
 
 @keyframes fadeIn {

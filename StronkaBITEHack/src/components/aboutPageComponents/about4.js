@@ -32,18 +32,21 @@ const About4 = () => {
 
     return (
         <div className={"about4-container"}>
-            <div className={"about4-content"}>
-                <h2 className={"about4-partner-main"}>Partner Główny</h2>
-                <div className={"about4-image-container"}>
-                    <img className={"a4-img"} src={pega} alt={"pega"}/>
-                </div>
-                <h3 className={"about4-partner"}>Partnerzy</h3>
-            </div>
+            {/*<div className={"about4-content"}>*/}
+                {/*<h2 className={"about4-partner-main"}>Partner Główny</h2>*/}
+                {/*<div className={"about4-image-container"}>*/}
+                {/*    <img className={"a4-img"} src={pega} alt={"pega"}/>*/}
+                {/*</div>*/}
+                {/*<h1 className={"about4-partner"}>Partnerzy</h1>*/}
+            {/*</div>*/}
+            <h1 className={"about4-partner"}>Partnerzy</h1>
             <div className={"partner-images"}>
                 <img className={"partner-img"} src={unit8} alt={"unit8"}/>
                 <img className={"partner-img"} src={avsystem} alt={"rafon-partner"}/>
                 <img className={"partner-img"} src={sabre} alt={"rafon-partner"}/>
                 <img className={"partner-img"} src={aptiv} alt={"rafon-partner"}/>
+                <img className={"partner-img"} src={ibm} alt={"rafon-partner"}/>
+                <img className={"partner-img"} src={hy} alt={"rafon-partner"}/>
                 <img className={"partner-img"} src={ibm} alt={"rafon-partner"}/>
                 <img className={"partner-img"} src={hy} alt={"rafon-partner"}/>
             </div>
