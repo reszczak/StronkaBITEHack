@@ -48,3 +48,10 @@
         width: 3vw;
     }
 }
+
+@media only screen and (max-width: 500px) {
+
+    .event-slider {
+        display: none;
+    }
+}

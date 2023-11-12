@@ -5,35 +5,38 @@ import rafon404 from "../../images/rafon404.jpg"
 
 import Konrad from "../../images/CT/Konrad.jpg"
 import Werka from "../../images/CT/Werka.jpg"
+import Karo from "../../images/CT/Karo.jpg"
+import Kondziu from "../../images/CT/Kondziu.jpg"
+import Pimpek from "../../images/CT/Pimpek.jpg"
 
 const ImageData = () => {
     const images = [
         {
-            original: rafonA1,
-            thumbnail: rafonA1,
+            original: Kondziu,
+            thumbnail: Kondziu,
             description: '',
             name: 'Konrad Krzemiński',
             status: 'Główny Koordynator Projektu',
             mail: 'konrad.krzeminski@best.krakow.pl',
-            stat: rafon404,
+            stat: Kondziu,
         },
         {
-            original: rafonA1,
-            thumbnail: rafonA1,
+            original: Pimpek,
+            thumbnail: Pimpek,
             description: '',
             name: 'Mateusz Wirkijowski',
             status: 'Koordynator ds. Grafiki i Promocji',
             mail: 'mateusz.wirkijowski@best.krakow.pl',
-            stat: rafonIN,
+            stat: Pimpek,
         },
         {
-            original: rafonA1,
-            thumbnail: rafonA1,
+            original: Karo,
+            thumbnail: Karo,
             description: '',
             name: 'Karolina Sędzik',
             status: 'Koordynator ds. Zasobów Ludzkich',
             mail: 'karolina.sedzik@best.krakow.pl',
-            stat: rafon404,
+            stat: Karo,
         },
         {
             original: Werka,

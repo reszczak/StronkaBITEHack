@@ -243,8 +243,8 @@ aside ul li .active {
 @media only screen and (max-width: 420px) {
 
     .header-button-logo {
-        width: 25vw;
-        height: 25vh;
+        width: 30vw;
+        height: 30vh;
         margin: 0;
     }
 

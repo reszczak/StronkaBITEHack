@@ -115,6 +115,10 @@
 
 @media only screen and (max-width: 420px) {
 
+    .main-container {
+        height: 100vh;
+    }
+
     .slider-container {
         margin-top: 5vh;
     }

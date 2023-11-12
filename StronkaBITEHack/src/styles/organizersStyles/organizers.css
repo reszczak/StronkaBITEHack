@@ -37,13 +37,14 @@
     text-align: center;
     align-content: center;
     margin-top: 1rem;
+    margin-bottom: 1.5vh;
     width: 100%;
     font-family: 'Exo 2', sans-serif;
 }
 
 .organizers-gallery {
-    height: calc(20vh + 15vw);
-    width: calc(20vh + 15vw);
+    height: calc(18vh + 13.5vw);
+    width: calc(18vh + 13.5vw);
     border: solid orange 1px;
     align-items: flex-start;
     align-content: center;
@@ -73,7 +74,7 @@
 }
 
 .footer {
-    height: 15vh;
+    height: 18vh;
     width: 100vw;
     background-color: rgba(0,0,0,0.2);
     color: white;
@@ -249,7 +250,7 @@
     }
 
     .footer{
-        height: 10vh;
+        height: 18vh;
         width: 100vw;
         position: relative;
         bottom: 0;

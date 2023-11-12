@@ -55,6 +55,18 @@ const HomePage = () => {
         }
     };
 
+    useEffect(() => {
+        const scrollToMainSection = () => {
+            const mainSection = document.querySelector("#main");
+            if (mainSection) {
+                mainSection.scrollIntoView({ behavior: 'auto', block: 'start' });
+            }
+        };
+
+        // Wywołaj funkcję po załadowaniu strony
+        scrollToMainSection();
+    }, []);
+
     document.documentElement.style.scrollBehavior = 'instant';
     const scrollToSection = (section) => {
         setIsScrolling(true);

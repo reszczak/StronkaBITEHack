@@ -133,7 +133,8 @@
 @media only screen and (max-width: 420px) {
 
     .about4-container {
-        height: 100vh;
+        height: 60vh;
+        margin-bottom: 20vh;
     }
 
     .about4-image-container {
