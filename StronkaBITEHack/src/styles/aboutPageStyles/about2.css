@@ -23,6 +23,11 @@
     justify-content: center;
     font-size: 0.9rem;
     /*margin: 1rem;*/
+
+    border: 1px solid orange;
+    border-radius: 20px;
+    background-color: rgba(203,203,193, 1);
+    color: black;
 }
 
 .about2-img-title {
@@ -69,7 +74,7 @@
 }
 
 .about2-h2 {
-    color: white;
+    color: black;
 }
 
 @media only screen and (max-width: 768px) {

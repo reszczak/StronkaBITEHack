@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import rafonA1 from "../../images/rafon-organizer.jpg";
-import rafonA2 from "../../images/rafon-about2.jpg";
 import rafonIN from "../../images/rafon_index.jpg";
 import rafon404 from "../../images/rafon404.jpg"
+
+import Konrad from "../../images/CT/Konrad.jpg"
+import Werka from "../../images/CT/Werka.jpg"
 
 const ImageData = () => {
     const images = [
@@ -34,13 +36,13 @@ const ImageData = () => {
             stat: rafon404,
         },
         {
-            original: rafonA1,
-            thumbnail: rafonA1,
+            original: Werka,
+            thumbnail: Werka,
             description: '',
             name: 'Weronika Tokarczyk',
             status: 'Koordynator ds. Logistyki',
             mail: 'weronika.tokarczyk@best.krakow.pl',
-            stat: rafonIN,
+            stat: Werka,
         },
         {
             original: rafonA1,
@@ -52,13 +54,13 @@ const ImageData = () => {
             stat: rafon404,
         },
         {
-            original: rafonA1,
-            thumbnail: rafonA1,
+            original: Konrad,
+            thumbnail: Konrad,
             description: '',
             name: 'Konrad Korzec',
             status: 'Koordynator ds. Merytoryki',
             mail: 'konrad.korzec@best.krakow.pl',
-            stat: rafonIN,
+            stat: Konrad,
         },
         {
             original: rafonA1,

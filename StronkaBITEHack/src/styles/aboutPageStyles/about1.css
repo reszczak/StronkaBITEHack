@@ -27,8 +27,9 @@
 
 .about1-h1 {
     margin-bottom: 2vh;
+    margin-top: 1.5vh;
     font-size: 2.5rem;
-    color: white;
+    color: black;
 }
 
 .about1-text {
@@ -59,6 +60,11 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+
+    border: 1px solid orange;
+    border-radius: 20px;
+    background-color: rgba(203,203,193, 1);
+    color: black;
 }
 
 .about1-loading-container {
