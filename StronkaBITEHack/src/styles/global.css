@@ -72,9 +72,12 @@ h1 {
 .header-container {
     position: sticky;
     top: 0;
-    height: 14vh;
-    background-color: rgba(0,0,0,1.0);
+    height: 13vh;
+    background-color: rgba(27,45,72,0.9);
     z-index: 1000;
+
+    /*background-image: url("../images/header.png");*/
+    /*object-fit: cover;*/
 }
 
 .header-ul {

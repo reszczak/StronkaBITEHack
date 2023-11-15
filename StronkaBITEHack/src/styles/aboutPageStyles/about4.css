@@ -53,21 +53,43 @@
 
 .partner-images {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem 4rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem 0.5rem;
     text-align: center;
     align-items: center;
     justify-content: center;
     margin: 1rem;
-    margin-top: 3vh;
-    margin-bottom: 5vh;
-
+    margin-top: 2vh;
+    margin-bottom: 3vh;
 }
 
 .partner-img {
-    max-width: 17vw;
-    width: 17vw;
-    height: 17vh;
+    max-width: 15vw;
+    width: 15vw;
+    height: 15vh;
+    border-radius: 10px;
+    border: 1px solid orange;
+    margin: 1rem;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 1);
+    /*transition: 0.3s;*/
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.patron-images {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1rem 4rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.patron-img {
+    max-width: 12vw;
+    width: 12vw;
+    height: 12vh;
     border-radius: 10px;
     border: 1px solid orange;
     margin: 1rem;
@@ -83,8 +105,14 @@
     transform: translateY(0);
 }
 
+.patron-img.appear {
+    animation: fadeIn 2.5s, slideUp 2.5s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .about4-partner {
-    margin-bottom: 2vh;
+    margin: 0;
     font-size: 4vh;
     font-family: 'Exo 2', sans-serif;
 }
@@ -128,12 +156,26 @@
         gap: 0.2rem 0.2rem;
     }
 
+    .patron-img
+    {
+        max-width: 17vw;
+        width: 17vw;
+        max-height: 6vh;
+    }
+
+    .patron-images
+    {
+        margin-top: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.2rem 0.2rem;
+    }
+
 }
 
 @media only screen and (max-width: 420px) {
 
     .about4-container {
-        height: 80vh;
+        height: 100vh;
         margin-bottom: 20vh;
     }
 
@@ -158,11 +200,26 @@
     {
         max-width: 30vw;
         max-height: 30vh;
-        width: 35vw;
+        width: 30vw;
         height: 8vh;
     }
 
     .partner-images
+    {
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.0rem 0.0rem;
+    }
+
+    .patron-img
+    {
+        max-width: 30vw;
+        max-height: 30vh;
+        width: 30vw;
+        height: 8vh;
+    }
+
+    .patron-images
     {
         margin: 0;
         grid-template-columns: repeat(2, 1fr);

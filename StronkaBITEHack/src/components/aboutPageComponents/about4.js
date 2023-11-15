@@ -13,7 +13,7 @@ import hy from "../../images/hackyeah_logo_czarne.jpg"
 const About4 = () => {
 
     useEffect(() => {
-        const pictures = document.querySelectorAll('.partner-img, .a4-img');
+        const pictures = document.querySelectorAll('.partner-img, .a4-img, .patron-img');
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -45,13 +45,18 @@ const About4 = () => {
                 <img className={"partner-img"} src={avsystem} alt={"rafon-partner"}/>
                 <img className={"partner-img"} src={sabre} alt={"rafon-partner"}/>
                 <img className={"partner-img"} src={aptiv} alt={"rafon-partner"}/>
+                <img className={"partner-img"} src={aptiv} alt={"rafon-partner"}/>
             </div>
             <h1 className={"about4-partner"}>Partnerzy medialni</h1>
-            <div className={"partner-images"}>
-                <img className={"partner-img"} src={unit8} alt={"unit8"}/>
-                <img className={"partner-img"} src={avsystem} alt={"rafon-partner"}/>
-                <img className={"partner-img"} src={sabre} alt={"rafon-partner"}/>
-                <img className={"partner-img"} src={aptiv} alt={"rafon-partner"}/>
+            <div className={"patron-images"}>
+                <img className={"patron-img"} src={unit8} alt={"unit8"}/>
+                <img className={"patron-img"} src={avsystem} alt={"rafon-partner"}/>
+                <img className={"patron-img"} src={sabre} alt={"rafon-partner"}/>
+                <img className={"patron-img"} src={aptiv} alt={"rafon-partner"}/>
+                <img className={"patron-img"} src={unit8} alt={"unit8"}/>
+                <img className={"patron-img"} src={avsystem} alt={"rafon-partner"}/>
+                <img className={"patron-img"} src={sabre} alt={"rafon-partner"}/>
+                <img className={"patron-img"} src={aptiv} alt={"rafon-partner"}/>
             </div>
         </div>
     )
