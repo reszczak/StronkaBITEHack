@@ -39,16 +39,19 @@ const About4 = () => {
                 {/*</div>*/}
                 {/*<h1 className={"about4-partner"}>Partnerzy</h1>*/}
             {/*</div>*/}
-            <h1 className={"about4-partner"}>Partnerzy</h1>
+            <h1 className={"about4-partner"}>Partnerzy wydarzenia</h1>
             <div className={"partner-images"}>
                 <img className={"partner-img"} src={unit8} alt={"unit8"}/>
                 <img className={"partner-img"} src={avsystem} alt={"rafon-partner"}/>
                 <img className={"partner-img"} src={sabre} alt={"rafon-partner"}/>
                 <img className={"partner-img"} src={aptiv} alt={"rafon-partner"}/>
-                <img className={"partner-img"} src={ibm} alt={"rafon-partner"}/>
-                <img className={"partner-img"} src={hy} alt={"rafon-partner"}/>
-                <img className={"partner-img"} src={ibm} alt={"rafon-partner"}/>
-                <img className={"partner-img"} src={hy} alt={"rafon-partner"}/>
+            </div>
+            <h1 className={"about4-partner"}>Partnerzy medialni</h1>
+            <div className={"partner-images"}>
+                <img className={"partner-img"} src={unit8} alt={"unit8"}/>
+                <img className={"partner-img"} src={avsystem} alt={"rafon-partner"}/>
+                <img className={"partner-img"} src={sabre} alt={"rafon-partner"}/>
+                <img className={"partner-img"} src={aptiv} alt={"rafon-partner"}/>
             </div>
         </div>
     )

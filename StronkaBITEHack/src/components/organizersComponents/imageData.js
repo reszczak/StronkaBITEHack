@@ -8,6 +8,7 @@ import Werka from "../../images/CT/Werka.jpg"
 import Karo from "../../images/CT/Karo.jpg"
 import Kondziu from "../../images/CT/Kondziu.jpg"
 import Pimpek from "../../images/CT/Pimpek.jpg"
+import Dawid from "../../images/CT/Dawid.jpg"
 
 const ImageData = () => {
     const images = [
@@ -66,13 +67,13 @@ const ImageData = () => {
             stat: Konrad,
         },
         {
-            original: rafonA1,
-            thumbnail: rafonA1,
+            original: Dawid,
+            thumbnail: Dawid,
             description: '',
             name: 'Dawid Reszczyński',
             status: 'Koordynator ds. Merytoryki',
             mail: 'dawid.reszczynski@best.krakow.pl',
-            stat: rafon404,
+            stat: Dawid,
         },
     ];
 

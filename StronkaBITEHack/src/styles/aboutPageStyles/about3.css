@@ -101,7 +101,14 @@
 
     .about3-container {
         overflow-x: hidden;
-        height: 75vh;
+        height: 80vh;
+        flex-direction: row;
+        padding: 0.5vh;
+
+        border: 1px solid orange;
+        border-radius: 20px;
+        background-color: rgba(203,203,193, 1);
+        color: black;
     }
 
     .about3-image-container {
@@ -111,13 +118,16 @@
     }
 
     .about3-left {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         z-index: 1010;
+        text-align: center;
+        margin: 0;
     }
 
     .about3-right {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         z-index: 1010;
+        text-align: center;
     }
 
     .a3-img {
@@ -130,22 +140,27 @@
     }
 
     .about3-space {
-        height: 4vh;
+        height: 0;
     }
 
     .about3-text {
-        font-size: 0.45rem;
+        font-size: 0.6rem;
         /*margin-bottom: 4vh;*/
         z-index: 1010;
     }
 
     .about3-desc-container-left {
         font-size: 0.8em;
-        width: 40vw;
+        width: 90vw;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
     }
 
     .about3-desc-container-right {
         font-size: 0.8em;
-        width: 40vw;
+        width: 90vw;
+        flex-direction: column;
+        text-align: center;
     }
 }

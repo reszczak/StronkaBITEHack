@@ -218,12 +218,13 @@
         /*align-items: flex-start;*/
         /*align-content: center;*/
         /*width: 100vw;*/
-        height: 60vh;
+        height: 40vh;
         /*scroll-snap-align: start;*/
         /*overflow-x: hidden;*/
     }
 
     .organizers-h1 {
+        font-size: 1.8rem;;
         margin-bottom: 5vh;
     }
 

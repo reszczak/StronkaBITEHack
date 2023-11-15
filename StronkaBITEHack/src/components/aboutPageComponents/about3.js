@@ -7,6 +7,7 @@ const About3 = () => {
     return (
         <div className={"about3-container"}>
             <div className={"about3-desc-container-left"}>
+                <div className={"about3-block"}>
                 <h2 className={"about3-left"}>Przebieg wydarzenia</h2>
                 <p className={"about3-text"}>
                     Uczestnicy konkursu mają 24 godziny na stworzenie i przedstawienie własnego
@@ -15,7 +16,9 @@ const About3 = () => {
                     Akademii Górniczo-Hutniczej. Każda kategoria ma swoją odpowiednią punktację,
                     wobec której będziecie oceniani.
                 </p>
+                </div>
                 <div className={"about3-space"}></div>
+                <div className={"about3-block"}>
                 <h2 className={"about3-left"}>Atrakcje</h2>
                 <p className={"about3-text"}>
                     W czasie wydarzenia nie będziecie narzekać na nudę! W przerwach
@@ -24,11 +27,13 @@ const About3 = () => {
                     w których będzie można wygrać nagrody! Będzie również czekać na Was
                     poczęstunek, aby nie zabrakło Wam sił do rozwiązywania problemów!
                 </p>
+                </div>
             </div>
             <div className={"about3-image-container"}>
                 <img className={"a3-img"} src={about3img} alt={"about3img"}/>
             </div>
             <div className={"about3-desc-container-right"}>
+                <div className={"about3-block"}>
                 <h2 className={"about3-right"}>Czym jest BITEhack?</h2>
                 <p className={"about3-text"}>
                     BITEhack jest hackatonem organizowanym przez stowarzyszenie studenckie
@@ -37,7 +42,9 @@ const About3 = () => {
                     rozwój, sprawdzenie swoich umiejętności oraz dobrą zabawę studentom. Jest to
                     również okazja aby spotkać się z przedstawicielami firm.
                 </p>
+                </div>
                 <div className={"about3-space"}></div>
+                    <div className={"about3-block"}>
                 <h2 className={"about3-right"}>Czy warto?</h2>
                 <p className={"about3-text"}>
                     Biorąc udział w wydarzeniu możecie spędzić wspólnie czas ze znajomymi,
@@ -46,6 +53,7 @@ const About3 = () => {
                     Hackathon jest również okazją do nawiązania kontaktów z przedstawicielami
                     największych firm na krakowskim rynku IT. Zapisz się już teraz!
                 </p>
+                    </div>
             </div>
         </div>
     )

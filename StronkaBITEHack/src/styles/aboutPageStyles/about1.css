@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: center;
     align-content: center;
     width: 90vw;
@@ -38,8 +38,8 @@
 }
 
 .a1-img {
-    width: 30vw;
-    height: 30vh;
+    width: 28vw;
+    height: 28vh;
     flex: 1;
     margin: 1rem;
     transition: 0.3s;
@@ -175,7 +175,7 @@
 @media only screen and (max-width: 420px) {
 
     .about1-bigger-container {
-        height: 55vh;
+        height: 75vh;
     }
 
     .a1-container {
@@ -199,16 +199,16 @@
     }
 
     .about1-image-container {
-        max-width: 60vw;
-        width: 50vw;
+        max-width: 70vw;
+        width: 65vw;
         align-items: center;
         margin-top: 1vh;
         margin-bottom: 0.1vh;
     }
 
     .a1-img {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
 
     .about1-loading-container {
