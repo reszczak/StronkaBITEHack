@@ -101,7 +101,7 @@
 
     .about3-container {
         overflow-x: hidden;
-        height: 80vh;
+        height: 75vh;
         flex-direction: row;
         padding: 0.5vh;
 
@@ -121,13 +121,14 @@
         font-size: 1.2rem;
         z-index: 1010;
         text-align: center;
-        margin: 0;
+        margin: 0.5vh;
     }
 
     .about3-right {
         font-size: 1.2rem;
         z-index: 1010;
         text-align: center;
+        margin: 0.5vh;
     }
 
     .a3-img {

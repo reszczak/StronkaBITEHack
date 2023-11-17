@@ -4,6 +4,9 @@ import Fb from "../../images/fb.png"
 import LinkedIn from "../../images/in.png"
 import Insta from "../../images/insta.png"
 
+import reg from "../../files/Regulamin BITEhack 2024.pdf"
+import rodo from "../../files/RODO.pdf"
+
 const Header = ({ scrollToSection }) => {
     return (
         <div className={"header-container"}>
@@ -16,7 +19,7 @@ const Header = ({ scrollToSection }) => {
                     </li>
                     <li><button className={"header-button"} onClick={() => scrollToSection('about1')}>O projekcie</button></li>
                     <li><button className={"header-button"} onClick={() => scrollToSection('organizers')}>Organizatorzy</button></li>
-                    <li><a href={'https://soundcloud.com/flajlemon/rafonixinawetkiedybedesam'} target="_blank" rel="noopener noreferrer">
+                    <li><a href={reg} target="_blank" rel="noopener noreferrer">
                         <button className={"header-button"}>Regulamin</button>
                     </a></li>
                     <li><a href={'https://www.newsite.best.krakow.pl/'} target="_blank" rel="noopener noreferrer">
