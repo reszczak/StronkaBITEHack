@@ -39,7 +39,7 @@ const ImageData = () => {
             name: 'Karolina Sędzik',
             status: 'Koordynator ds. Zasobów Ludzkich',
             mail: 'karolina.sedzik@best.krakow.pl',
-            stat: stat1,
+            stat: stat4,
         },
         {
             original: Werka,
@@ -48,7 +48,7 @@ const ImageData = () => {
             name: 'Weronika Tokarczyk',
             status: 'Koordynator ds. Logistyki',
             mail: 'weronika.tokarczyk@best.krakow.pl',
-            stat: stat4,
+            stat: stat3,
         },
         {
             original: Tomek,
@@ -57,7 +57,7 @@ const ImageData = () => {
             name: 'Tomasz Kaczor',
             status: 'Koordynator ds. Kontaktu z Firmami',
             mail: 'tomasz.kaczor@best.krakow.pl',
-            stat: stat1,
+            stat: stat4,
         },
         {
             original: Konrad,
