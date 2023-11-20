@@ -86,6 +86,9 @@ const HomePage = () => {
                 sectionRefs[section].current.scrollIntoView({ behavior: 'instant' });
                 setHasScrolledToNewSection(true);
             }, 350);
+        } else {
+            sectionRefs[section].current.scrollIntoView({ behavior: 'instant' });
+            setHasScrolledToNewSection(true);
         }
 
         playTechWipeVideo();
@@ -96,15 +99,11 @@ const HomePage = () => {
             setTimeout(() => {
                 sectionRefs.main.current.scrollIntoView({ behavior: 'instant', block: 'center' });
             }, 500);
+        } else {
+            sectionRefs.main.current.scrollIntoView({ behavior: 'instant', block: 'center' });
         }
     }, []);
 
-    useEffect(() => {
-        const headerButton = document.querySelector(".header-button-logo");
-        if (headerButton) {
-            headerButton.click();
-        }
-    }, []);
 
     const { images, currentImage, handleImageChange } = ImageData();
     const indicators = document.querySelectorAll(".indicator");
@@ -150,6 +149,10 @@ const HomePage = () => {
                         .querySelector(this.getAttribute("href"))
                         .scrollIntoView({ behavior: 'instant' });
                 }, 500);
+            } else {
+                document
+                    .querySelector(this.getAttribute("href"))
+                    .scrollIntoView({ behavior: 'instant' });
             }
             resetCurrentActiveIndicator();
             this.classList.add("active");
