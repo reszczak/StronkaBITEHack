@@ -83,7 +83,7 @@ const HomePage = () => {
         setTimeout(() => {
             sectionRefs.main.current.scrollIntoView({ behavior: 'instant', block: 'center' });
         }, 500);
-    }, [sectionRefs]);
+    }, []);
 
     useEffect(() => {
         const headerButton = document.querySelector(".header-button-logo");
