@@ -33,6 +33,19 @@ const HomePage = () => {
     const [isAnimationActive, setIsAnimationActive] = useState(true);
     const [isAnimationStarted, setIsAnimationStarted] = useState(false);
     const [isSafariBrowser, setIsSafariBrowser] = useState(false)
+    const [hasScrolledToNewSection, setHasScrolledToNewSection] = useState(false);
+
+    useEffect(() => {
+        const scrollToMainSection = () => {
+            const mainSection = document.querySelector("#main");
+            if (mainSection) {
+                mainSection.scrollIntoView({ behavior: 'auto', block: 'start' });
+            }
+        };
+
+        // Wywołaj funkcję po załadowaniu strony
+        scrollToMainSection();
+    }, []);
 
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -52,7 +65,45 @@ const HomePage = () => {
         setIsSafariBrowser(isSafari);
     }, []);
 
-    const [hasScrolledToNewSection, setHasScrolledToNewSection] = useState(false);
+
+    useEffect(() => {
+        if (!isSafariBrowser) {
+            setTimeout(() => {
+                sectionRefs.main.current.scrollIntoView({ behavior: 'instant', block: 'center' });
+            }, 500);
+        } else {
+            sectionRefs.main.current.scrollIntoView({ behavior: 'instant', block: 'center' });
+        }
+    }, []);
+
+    useEffect(() => {
+        document.documentElement.style.scrollBehavior = 'instant';
+        const indicators = document.querySelectorAll(".indicator");
+        const sections = document.querySelectorAll("section");
+
+        indicators.forEach((indicator) => {
+            indicator.addEventListener("click", function (event) {
+                event.preventDefault();
+                if (!isSafariBrowser) {
+                    setTimeout(() => {
+                        document
+                            .querySelector(this.getAttribute("href"))
+                            .scrollIntoView({ behavior: 'instant' });
+                    }, 500);
+                } else {
+                    document
+                        .querySelector(this.getAttribute("href"))
+                        .scrollIntoView({ behavior: 'instant' });
+                }
+                resetCurrentActiveIndicator();
+                this.classList.add("active");
+                playTechWipeVideo();
+            });
+        });
+
+        sections.forEach(onSectionLeavesViewport);
+
+    });
 
     const playTechWipeVideo = () => {
         const video = document.querySelector(".animation-video");
@@ -63,20 +114,6 @@ const HomePage = () => {
         }
     };
 
-
-    useEffect(() => {
-        const scrollToMainSection = () => {
-            const mainSection = document.querySelector("#main");
-            if (mainSection) {
-                mainSection.scrollIntoView({ behavior: 'auto', block: 'start' });
-            }
-        };
-
-        // Wywołaj funkcję po załadowaniu strony
-        scrollToMainSection();
-    }, []);
-
-    document.documentElement.style.scrollBehavior = 'instant';
     const scrollToSection = (section) => {
         setIsScrolling(true);
         setIsAnimationActive(true);
@@ -94,20 +131,10 @@ const HomePage = () => {
         playTechWipeVideo();
     };
 
-    useEffect(() => {
-        if (!isSafariBrowser) {
-            setTimeout(() => {
-                sectionRefs.main.current.scrollIntoView({ behavior: 'instant', block: 'center' });
-            }, 500);
-        } else {
-            sectionRefs.main.current.scrollIntoView({ behavior: 'instant', block: 'center' });
-        }
-    }, []);
 
 
     const { images, currentImage, handleImageChange } = ImageData();
-    const indicators = document.querySelectorAll(".indicator");
-    const sections = document.querySelectorAll("section");
+
 
     const resetCurrentActiveIndicator = () => {
         const activeIndicator = document.querySelector(".active");
@@ -139,28 +166,6 @@ const HomePage = () => {
         );
         observer.observe(section);
     };
-
-    indicators.forEach((indicator) => {
-        indicator.addEventListener("click", function (event) {
-            event.preventDefault();
-            if (!isSafariBrowser) {
-                setTimeout(() => {
-                    document
-                        .querySelector(this.getAttribute("href"))
-                        .scrollIntoView({ behavior: 'instant' });
-                }, 500);
-            } else {
-                document
-                    .querySelector(this.getAttribute("href"))
-                    .scrollIntoView({ behavior: 'instant' });
-            }
-            resetCurrentActiveIndicator();
-            this.classList.add("active");
-            playTechWipeVideo();
-        });
-    });
-
-    sections.forEach(onSectionLeavesViewport);
 
     return (
         <div>
