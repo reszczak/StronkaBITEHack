@@ -32,6 +32,7 @@ const HomePage = () => {
     const [parallaxOffset, setParallaxOffset] = useState({ x: 0, y: 0 });
     const [isAnimationActive, setIsAnimationActive] = useState(true);
     const [isAnimationStarted, setIsAnimationStarted] = useState(false);
+    const [isSafariBrowser, setIsSafariBrowser] = useState(false)
 
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -43,6 +44,12 @@ const HomePage = () => {
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
         };
+    }, []);
+
+    useEffect(() => {
+        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        console.log(isSafari)
+        setIsSafariBrowser(isSafari);
     }, []);
 
     const [hasScrolledToNewSection, setHasScrolledToNewSection] = useState(false);
@@ -74,17 +81,22 @@ const HomePage = () => {
         setIsScrolling(true);
         setIsAnimationActive(true);
         setIsAnimationStarted(false);
-        setTimeout(() => {
-            sectionRefs[section].current.scrollIntoView({ behavior: 'instant' });
-            setHasScrolledToNewSection(true);
-        }, 350);
+        if (!isSafariBrowser) {
+            setTimeout(() => {
+                sectionRefs[section].current.scrollIntoView({ behavior: 'instant' });
+                setHasScrolledToNewSection(true);
+            }, 350);
+        }
+
         playTechWipeVideo();
     };
 
     useEffect(() => {
-        setTimeout(() => {
-            sectionRefs.main.current.scrollIntoView({ behavior: 'instant', block: 'center' });
-        }, 500);
+        if (!isSafariBrowser) {
+            setTimeout(() => {
+                sectionRefs.main.current.scrollIntoView({ behavior: 'instant', block: 'center' });
+            }, 500);
+        }
     }, []);
 
     useEffect(() => {
@@ -132,11 +144,13 @@ const HomePage = () => {
     indicators.forEach((indicator) => {
         indicator.addEventListener("click", function (event) {
             event.preventDefault();
-            setTimeout(() => {
-                document
-                    .querySelector(this.getAttribute("href"))
-                    .scrollIntoView({ behavior: 'instant' });
-            }, 500);
+            if (!isSafariBrowser) {
+                setTimeout(() => {
+                    document
+                        .querySelector(this.getAttribute("href"))
+                        .scrollIntoView({ behavior: 'instant' });
+                }, 500);
+            }
             resetCurrentActiveIndicator();
             this.classList.add("active");
             playTechWipeVideo();
@@ -170,7 +184,7 @@ const HomePage = () => {
                     </li>
                 </ul>
             </aside>
-            {isAnimationActive && (
+            {(isAnimationActive && !isSafariBrowser) && (
                 <video autoPlay muted playsInline className="animation-video">
                     <source src={TechWipe} type="video/mp4" />
                     <source src={TechWipe} type="video/webm" />
