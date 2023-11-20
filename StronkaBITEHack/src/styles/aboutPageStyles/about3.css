@@ -24,7 +24,7 @@
     text-align: right;
     align: center;
     font-family: 'Exo 2', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     margin-top: 0;
 }
 
@@ -32,7 +32,7 @@
     text-align: left;
     align: center;
     font-family: 'Exo 2', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     margin-top: 0;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .about3-text {
-    font-size: 1vw;
+    font-size: 0.9vw;
     font-family: 'Montserrat', sans-serif;
 }
 
