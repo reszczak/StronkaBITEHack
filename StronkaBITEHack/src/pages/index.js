@@ -18,7 +18,6 @@ import Layer4 from "../images/Background/Layer 4.png"
 import Layer5 from "../images/Background/Layer 5.png"
 import Layer6 from "../images/Background/Layer 6.png"
 import TechWipe from "../images/Background/Slide Reveal (Blue).webm"
-
 const HomePage = () => {
     const sectionRefs = {
         main: useRef(null),
@@ -51,9 +50,12 @@ const HomePage = () => {
     const playTechWipeVideo = () => {
         const video = document.querySelector(".animation-video");
         if (video) {
-            video.play();
+            video.play().catch((error) => {
+                console.error('Błąd podczas rozpoczynania odtwarzania wideo:', error);
+            });
         }
     };
+
 
     useEffect(() => {
         const scrollToMainSection = () => {
@@ -170,7 +172,9 @@ const HomePage = () => {
             </aside>
             {isAnimationActive && (
                 <video autoPlay muted playsInline className="animation-video">
+                    <source src={TechWipe} type="video/mp4" />
                     <source src={TechWipe} type="video/webm" />
+                    Twoja przeglądarka nie obsługuje tagu wideo.
                 </video>
             )}
             <div className="layer" style={{ transform: `translate(${parallaxOffset.x * -0.75}px, ${parallaxOffset.y * -0.75}px)` }}>
