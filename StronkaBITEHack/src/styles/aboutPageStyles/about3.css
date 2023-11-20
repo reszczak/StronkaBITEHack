@@ -114,7 +114,7 @@
 
     .about3-container {
         overflow-x: hidden;
-        height: 95vh;
+        height: 105vh;
         flex-direction: row;
         padding: 0.5vh;
 
@@ -182,5 +182,7 @@
         border: 0px;
         border-radius: 0px;
         color: black;
+        font-size: 2.0vh;
+        margin: 0;
     }
 }
