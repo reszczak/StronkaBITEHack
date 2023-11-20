@@ -19,6 +19,8 @@ body {
     overflow-y: scroll;
     height: 100vh;
     scroll-snap-type: y mandatory;
+    position: absolute;
+    bottom: 0;
 }
 
 .animation-video {

@@ -86,6 +86,7 @@
     position: relative;
     bottom: 0;
     overflow: hidden;
+    padding-bottom: 24vh;
 }
 
 .footer-logo {
@@ -186,6 +187,7 @@
         width: 100vw;
         position: relative;
         bottom: 0;
+        padding: 0;
     }
 
     .footer-logo {
