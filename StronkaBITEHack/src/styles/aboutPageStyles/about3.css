@@ -24,12 +24,14 @@
     text-align: right;
     align: center;
     font-family: 'Exo 2', sans-serif;
+    font-size: 1.5vw;
 }
 
 .about3-right {
     text-align: left;
     align: center;
     font-family: 'Exo 2', sans-serif;
+    font-size: 1.5vw;
 }
 
 .about3-desc-container-left {
@@ -37,10 +39,18 @@
     display: flex;
     flex-direction: column;
     text-align: right;
+
+}
+
+.about3-block {
+    border: 1px solid orange;
+    border-radius: 20px;
+    background-color: rgba(203,203,193, 1);
+    color: black;
 }
 
 .about3-text {
-    font-size: 0.9rem;
+    font-size: 1vw;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -163,5 +173,11 @@
         width: 90vw;
         flex-direction: column;
         text-align: center;
+    }
+
+    .about3-block {
+        border: 0px;
+        border-radius: 0px;
+        color: black;
     }
 }
