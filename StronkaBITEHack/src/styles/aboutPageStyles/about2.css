@@ -14,7 +14,7 @@
 }
 
 .about2-desc-container {
-    width: 35vw;
+    width: 40vw;
     order: 1;
     display: flex;
     flex-direction: column;
@@ -41,8 +41,8 @@
 }
 
 .a2-img {
-    width: 35vw;
-    height: 35vh;
+    width: 30vw;
+    height: 30vh;
     flex: 1;
     margin: 1rem;
     transition: 0.3s;
@@ -116,11 +116,11 @@
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
 
     .about2-container {
         margin-top: 4vh;
-        height: 90vh;
+        height: 100vh;
     }
 
     .about2-desc-container {

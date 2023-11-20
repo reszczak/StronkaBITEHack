@@ -4,10 +4,10 @@ import '../../styles/mainPageStyles/main.css';
 import VideoPlayer from './videoPlayerHomePage';
 import InfoBlock from './infoBlock';
 import CategorySlider from './CategorySlider';
-import bh_mov from '../../images/bh_mov.mp4';
-import main1 from '../../images/mainimg1.png';
-import main2 from '../../images/mainimg2.png';
-import hackaton from '../../images/hackaton.png';
+import bh_mov from '../../images/Page_images/bh_mov.mp4';
+import main1 from '../../images/Page_images/mainimg1.png';
+import main2 from '../../images/Page_images/mainimg2.png';
+import hackaton from '../../images/Page_images/hackaton.png';
 import button1 from '../../images/button1.png';
 
 const MainPage = () => {

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/global.css';
 import '../../styles/aboutPageStyles/about1.css';
-import about1_1 from "../../images/about1img1.png";
-import about1_2 from "../../images/about1img2.png";
+import about1_1 from "../../images/Page_images/about1img1.png";
+import about1_2 from "../../images/Page_images/about1img2.png";
 
 const About1 = () => {
     const [loadingText, setLoadingText] = useState('Loading...');

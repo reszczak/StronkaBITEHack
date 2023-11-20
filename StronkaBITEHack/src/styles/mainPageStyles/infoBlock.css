@@ -89,7 +89,7 @@
     }
 
     .infoBl-title {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin-top: 1vh;
         margin-bottom: 0;
     }
@@ -108,10 +108,10 @@
     }
 
     .infoBl-content {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .infoBl-content2 {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 }

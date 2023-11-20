@@ -2,7 +2,7 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import '../../styles/organizersStyles/organizers.css'
-import Best_logo from "../../images/best_logo.png"
+import Best_logo from "../../images/Page_images/best_logo.png"
 
 const Organizers = ({ images, currentImage, handleImageChange }) => {
     return (

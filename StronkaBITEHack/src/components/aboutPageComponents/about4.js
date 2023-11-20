@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import '../../styles/global.css'
 import '../../styles/aboutPageStyles/about4.css'
 import pega from "../../images/PW/Pega_Logo.jpg"
-import unit8 from "../../images/unit8_logo.jpg"
 import avsystem from "../../images/PW/avsystem_logo.jpg"
 import sabre from "../../images/PW/sabre-2-logo-png-transparent.jpg"
 import aptiv from "../../images/PW/Aptiv_Logo.jpg"
@@ -47,22 +46,48 @@ const About4 = () => {
             {/*</div>*/}
             <h1 className={"about4-partner"}>Partnerzy wydarzenia</h1>
             <div className={"partner-images"}>
+                <a href={'https://www.pega.com/'} target="_blank" rel="noopener noreferrer">
                 <img className={"partner-img"} src={pega} alt={"pega"}/>
+                </a>
+                <a href={'https://www.avsystem.com/'} target="_blank" rel="noopener noreferrer">
                 <img className={"partner-img"} src={avsystem} alt={"avsystems"}/>
+                </a>
+                <a href={'https://www.sabre.com/'} target="_blank" rel="noopener noreferrer">
                 <img className={"partner-img"} src={sabre} alt={"sabre"}/>
+                </a>
+                <a href={'https://www.aptiv.com/'} target="_blank" rel="noopener noreferrer">
                 <img className={"partner-img"} src={aptiv} alt={"aptiv"}/>
+                </a>
+                <a href={'https://kpmg.com/pl/pl/home.html'} target="_blank" rel="noopener noreferrer">
                 <img className={"partner-img"} src={kpmg} alt={"kpmg"}/>
+                </a>
             </div>
             <h1 className={"about4-partner"}>Partnerzy medialni</h1>
             <div className={"patron-images"}>
+                <a href={'https://bit.bestgliwice.pl/'} target="_blank" rel="noopener noreferrer">
                 <img className={"patron-img"} src={bit1} alt={"bit1"}/>
+                </a>
+                <a href={'https://www.dlastudenta.pl/'} target="_blank" rel="noopener noreferrer">
                 <img className={"patron-img"} src={ds} alt={"ds"}/>
+                </a>
+                <a href={'https://www.fxmag.pl/'} target="_blank" rel="noopener noreferrer">
                 <img className={"patron-img"} src={fx} alt={"fx"}/>
+                </a>
+                <a href={'https://kms.org.pl/'} target="_blank" rel="noopener noreferrer">
                 <img className={"patron-img"} src={kms} alt={"kms"}/>
+                </a>
+                <a href={'https://bit.best.wroclaw.pl/'} target="_blank" rel="noopener noreferrer">
                 <img className={"patron-img"} src={bit2} alt={"bit2"}/>
+                </a>
+                <a href={'https://best-lodz.pl/meet-it/'} target="_blank" rel="noopener noreferrer">
                 <img className={"patron-img"} src={mit} alt={"mit"}/>
+                </a>
+                <a href={'https://mamstartup.pl/'} target="_blank" rel="noopener noreferrer">
                 <img className={"patron-img"} src={ms} alt={"ms"}/>
+                </a>
+                <a href={'https://solid.jobs/offers/it'} target="_blank" rel="noopener noreferrer">
                 <img className={"patron-img"} src={sj} alt={"sj"}/>
+                </a>
             </div>
         </div>
     )

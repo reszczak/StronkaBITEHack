@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/global.css'
 import '../../styles/aboutPageStyles/about3.css'
-import about3img from "../../images/about3img.png";
+import about3img from "../../images/Page_images/about3img.png";
 
 const About3 = () => {
     return (

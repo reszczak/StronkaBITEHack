@@ -11,13 +11,13 @@ import About3 from "../components/aboutPageComponents/about3";
 import About4 from "../components/aboutPageComponents/about4";
 import Organizers from "../components/organizersComponents/organizers";
 import ImageData from "../components/organizersComponents/imageData";
-import Layer1 from "../images/background/Layer 1.png"
-import Layer2 from "../images/background/Layer 2.png"
-import Layer3 from "../images/background/Layer 3.png"
-import Layer4 from "../images/background/Layer 4.png"
-import Layer5 from "../images/background/Layer 5.png"
-import Layer6 from "../images/background/Layer 6.png"
-import TechWipe from "../images/background/Slide Reveal (Blue).webm"
+import Layer1 from "../images/Background/Layer 1.png"
+import Layer2 from "../images/Background/Layer 2.png"
+import Layer3 from "../images/Background/Layer 3.png"
+import Layer4 from "../images/Background/Layer 4.png"
+import Layer5 from "../images/Background/Layer 5.png"
+import Layer6 from "../images/Background/Layer 6.png"
+import TechWipe from "../images/Background/Slide Reveal (Blue).webm"
 
 const HomePage = () => {
     const sectionRefs = {

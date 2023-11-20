@@ -45,7 +45,7 @@
 }
 
 .about3-space {
-    height: 25vh;
+    height: 10vh;
 }
 
 .about3-desc-container-right {
@@ -97,11 +97,11 @@
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
 
     .about3-container {
         overflow-x: hidden;
-        height: 75vh;
+        height: 95vh;
         flex-direction: row;
         padding: 0.5vh;
 

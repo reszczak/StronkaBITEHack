@@ -73,11 +73,8 @@ h1 {
     position: sticky;
     top: 0;
     height: 13vh;
-    background-color: rgba(27,45,72,0.9);
+    background-color: var(--body-background-color, #1b2d48);
     z-index: 1000;
-
-    /*background-image: url("../images/header.png");*/
-    /*object-fit: cover;*/
 }
 
 .header-ul {
@@ -249,7 +246,7 @@ aside ul li .active {
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
 
     .header-button-logo {
         width: 30vw;

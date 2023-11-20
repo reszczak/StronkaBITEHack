@@ -1,8 +1,8 @@
 import React from 'react';
-import bestLogo from "../../images/BH_logo.png"
-import Fb from "../../images/fb.png"
-import LinkedIn from "../../images/in.png"
-import Insta from "../../images/insta.png"
+import bestLogo from "../../images/Page_images/BH_logo.png"
+import Fb from "../../images/Page_images/fb.png"
+import LinkedIn from "../../images/Page_images/in.png"
+import Insta from "../../images/Page_images/insta.png"
 
 import reg from "../../files/Regulamin BITEhack 2024.pdf"
 import rodo from "../../files/RODO.pdf"

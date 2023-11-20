@@ -172,10 +172,10 @@
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
 
     .about1-bigger-container {
-        height: 75vh;
+        height: 85vh;
     }
 
     .a1-container {
@@ -200,7 +200,7 @@
 
     .about1-image-container {
         max-width: 70vw;
-        width: 65vw;
+        width: 55vw;
         align-items: center;
         margin-top: 1vh;
         margin-bottom: 0.1vh;
