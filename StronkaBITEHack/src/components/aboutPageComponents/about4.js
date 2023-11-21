@@ -14,6 +14,7 @@ import kms from "../../images/PM/kms.png"
 import mit from "../../images/PM/meet_it.png"
 import ms from "../../images/PM/ms.png"
 import sj from "../../images/PM/solid_jobs.png"
+import cw from "../../images/PM/CW.jpg"
 
 const About4 = () => {
 
@@ -87,6 +88,9 @@ const About4 = () => {
                 </a>
                 <a href={'https://solid.jobs/offers/it'} target="_blank" rel="noopener noreferrer">
                 <img className={"patron-img"} src={sj} alt={"sj"}/>
+                </a>
+                <a href={'https://crossweb.pl/'} target="_blank" rel="noopener noreferrer">
+                <img className={"patron-img"} src={cw} alt={"cw"}/>
                 </a>
             </div>
         </div>

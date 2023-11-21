@@ -38,7 +38,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     transition: transform 0.0s ease;
     pointer-events: none;
@@ -276,7 +276,7 @@ aside ul li .active {
     }
 
     .layer {
-        width: 93vw;
+        width: 94vw;
         height: 100%;
         /*transform: scale(1.2)*/
 

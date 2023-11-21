@@ -87,7 +87,8 @@
         order: 2;
         width: 100%;
         font-size: 0.8rem;
-        text-align: center;
+        text-align: justify;
+        padding: 10px;
     }
 
     .about2-img-title {
@@ -128,7 +129,7 @@
 
     .about2-desc-container {
         font-size: 0.7rem;
-        padding: 5px;
+        padding: 10px;
     }
 
     .a2-img {

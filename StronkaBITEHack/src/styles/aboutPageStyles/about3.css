@@ -26,10 +26,12 @@
     font-family: 'Exo 2', sans-serif;
     font-size: 1.3vw;
     margin-top: 0;
+    padding-right: 10px;
 }
 
 .about3-right {
     text-align: left;
+    padding-left: 10px;
     align: center;
     font-family: 'Exo 2', sans-serif;
     font-size: 1.3vw;
@@ -49,12 +51,13 @@
     border-radius: 20px;
     background-color: rgba(203,203,193, 1);
     color: black;
-    padding: 10px;
+    padding: 2px;
 }
 
 .about3-text {
     font-size: 0.9vw;
     font-family: 'Montserrat', sans-serif;
+    padding: 10px;
 }
 
 .about3-space {
@@ -93,6 +96,7 @@
 
     .about3-text {
         font-size: 0.65rem;
+        padding: 10px;
     }
 
     .about3-desc-container-left {
@@ -114,7 +118,7 @@
 
     .about3-container {
         overflow-x: hidden;
-        height: 105vh;
+        height: 110vh;
         flex-direction: row;
         padding: 0.5vh;
 
@@ -161,13 +165,14 @@
         font-size: 0.6rem;
         /*margin-bottom: 4vh;*/
         z-index: 1010;
+        padding: 10px;
     }
 
     .about3-desc-container-left {
         font-size: 0.8em;
         width: 90vw;
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
         margin: 0;
     }
 
@@ -175,7 +180,7 @@
         font-size: 0.8em;
         width: 90vw;
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
     }
 
     .about3-block {

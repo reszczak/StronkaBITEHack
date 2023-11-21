@@ -78,7 +78,7 @@
 
 .patron-images {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(5, 2fr);
     gap: 1rem 4rem;
     text-align: center;
     align-items: center;
@@ -137,6 +137,10 @@
 
 @media only screen and (max-width: 768px) {
 
+    .about4-container {
+        height: 120vh;
+    }
+
     .a4-img{
         max-width: 50vw;
         max-height: 50vh;
@@ -175,7 +179,7 @@
 @media only screen and (max-width: 420px) {
 
     .about4-container {
-        height: 110vh;
+        height: 120vh;
         margin-bottom: 20vh;
     }
 
