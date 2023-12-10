@@ -32,16 +32,20 @@ const MainPage = () => {
                     imageSrc={main2}
                     title="Kiedy?"
                     content="20-21.01.2024r"
-                    content2={"Zapisy do 10 grudnia!"}
+                    content2={""}
                 />
-                <div className={"main-button"}>
-                    <a href="https://forms.gle/NFEUNQTahEYnPqTFA" target="_blank" rel="noopener noreferrer">
-                        <img
-                            src={button1}
-                            alt="Zapisz się!"
-                            className="event-image"
-                        />
-                    </a>
+                {/*<div className={"main-button"}>*/}
+                {/*    <a href="https://forms.gle/NFEUNQTahEYnPqTFA" target="_blank" rel="noopener noreferrer">*/}
+                {/*        <img*/}
+                {/*            src={button1}*/}
+                {/*            alt="Zapisz się!"*/}
+                {/*            className="event-image"*/}
+                {/*        />*/}
+                {/*    </a>*/}
+                {/*</div>*/}
+                <div className={"main-end"}>
+                    Zapisy zakończone <br/>
+                    Dziękujemy wszystkim drużynom!
                 </div>
             </div>
         </div>

@@ -78,6 +78,17 @@
     margin-bottom: 1vh;
 }
 
+.main-end {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 3vh;
+
+    border: 1px solid orange;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgba(203,203,193, 1);
+    color: black;
+}
+
 @media only screen and (max-width: 768px) {
 
     .main-container {
@@ -111,6 +122,12 @@
         /*display: none;*/
         height: 7vh;
         margin: 1vh;
+    }
+
+    .main-end {
+        margin-top: 2vh;
+        font-size: 2vh;
+        padding: 10px;
     }
 }
 
